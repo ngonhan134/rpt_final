@@ -1,0 +1,2164 @@
+ 
+****************************************
+Report : timing
+        -path full_clock
+        -delay max
+        -nets
+        -group clk
+        -max_paths 20
+Design : jpeg_top
+Version: K-2015.06-SP2
+Date   : Sun Sep 11 01:06:52 2016
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 25/25/25
+
+Information: Percent of Arnoldi-based delays = 97.36%
+
+  Startpoint: U1_u1_Ti7_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_65_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I57/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I57 (net)                            14         0.00       0.44 r
+  NBUFFX2_RVT_G1B1I65/Y (NBUFFX2_RVT)                     0.06 @     0.50 r
+  clk_G1B9I65 (net)                             5         0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/QN (DFFX2_RVT)               0.09 @     0.60 f
+  U1_u1_n73257 (net)                            2         0.00       0.60 f
+  U5754/Y (NBUFFX32_RVT)                                  0.04 @     0.64 f
+  n5766 (net)                                   6         0.00       0.64 f
+  U5755/Y (NBUFFX16_RVT)                                  0.04 @     0.68 f
+  n5767 (net)                                  16         0.00       0.68 f
+  U1_u1_U25605/Y (NAND2X0_RVT)                            0.07 @     0.76 r
+  U1_u1_n23293 (net)                            1         0.00       0.76 r
+  U7687/Y (DELLN1X2_RVT)                                  0.12 @     0.88 r
+  n7699 (net)                                   1         0.00       0.88 r
+  U7688/Y (IBUFFX32_RVT)                                  0.04 @     0.92 f
+  n7700 (net)                                  28         0.00       0.92 f
+  U1_u1_U13950/Y (NAND2X0_RVT)                            0.07 @     0.99 r
+  U1_u1_n7407 (net)                             1         0.00       0.99 r
+  U1_u1_U13951/Y (NAND3X0_RVT)                            0.07 @     1.06 f
+  U1_u1_n23478 (net)                            3         0.00       1.06 f
+  U1_u1_U13952/Y (NAND2X0_RVT)                            0.05 @     1.11 r
+  U1_u1_n7409 (net)                             1         0.00       1.11 r
+  U1_u1_U13955/Y (NAND3X0_RVT)                            0.07 @     1.18 f
+  U1_u1_n23489 (net)                            2         0.00       1.18 f
+  U1_u1_U25749/Y (XOR3X2_RVT)                             0.11 @     1.29 r
+  U1_u1_n23565 (net)                            3         0.00       1.29 r
+  U1_u1_U25801/Y (XOR3X2_RVT)                             0.10 @     1.39 f
+  U1_u1_n23600 (net)                            3         0.00       1.39 f
+  U1_u1_U13110/Y (NAND2X0_RVT)                            0.03 @     1.42 r
+  U1_u1_n7190 (net)                             1         0.00       1.42 r
+  U1_u1_U7237/Y (NAND3X0_RVT)                             0.06 @     1.48 f
+  U1_u1_n23605 (net)                            3         0.00       1.48 f
+  U1_u1_U7236/Y (XOR3X2_RVT)                              0.11 @     1.59 r
+  U1_u1_n34351 (net)                            3         0.00       1.59 r
+  U1_u1_U25823/Y (NAND2X0_RVT)                            0.05 @     1.64 f
+  U1_u1_n49297 (net)                            3         0.00       1.64 f
+  U1_u1_U33062/Y (OA21X1_RVT)                             0.06 @     1.69 f
+  U1_u1_n34366 (net)                            1         0.00       1.69 f
+  U1_u1_U1606/Y (OAI21X1_RVT)                             0.06 @     1.76 r
+  U1_u1_n34368 (net)                            1         0.00       1.76 r
+  U1_u1_U33063/Y (AO21X1_RVT)                             0.03 @     1.79 r
+  U1_u1_n34372 (net)                            1         0.00       1.79 r
+  U1_u1_U8776/Y (XOR2X1_RVT)                              0.08 @     1.87 f
+  U1_u1_n6295 (net)                             1         0.00       1.87 f
+  U1_u1_U9421/Y (NAND2X0_RVT)                             0.04 @     1.91 r
+  U1_u1_n34373 (net)                            1         0.00       1.91 r
+  U1_u1_U33064/Y (NAND2X0_RVT)                            0.03 @     1.95 f
+  U1_u1_n4052 (net)                             1         0.00       1.95 f
+  U1_u1_Z_temp_65_reg_25_/D (DFFX1_RVT)                   0.00 @     1.95 f
+  data arrival time                                                  1.95
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     1.88 r
+  clk_G1B5I6 (net)                              3         0.00       1.88 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     1.95 r
+  clk_G1B6I4 (net)                              3         0.00       1.95 r
+  NBUFFX4_RVT_G1B2I50/Y (NBUFFX2_RVT)                     0.06 @     2.01 r
+  clk_G1B8I50 (net)                             1         0.00       2.01 r
+  NBUFFX4_RVT_G1B1I503/Y (NBUFFX2_RVT)                    0.06 @     2.07 r
+  clk_G1B9I503 (net)                            6         0.00       2.07 r
+  U1_u1_Z_temp_65_reg_25_/CLK (DFFX1_RVT)                 0.00 @     2.07 r
+  clock uncertainty                                      -0.10       1.97
+  U1_u1_Z_temp_65_reg_25_/CLK (DFFX1_RVT)                 0.00       1.97 r
+  library setup time                                     -0.03       1.94
+  data required time                                                 1.94
+  --------------------------------------------------------------------------
+  data required time                                                 1.94
+  data arrival time                                                 -1.95
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+  Startpoint: U1_u1_Y61_final_2_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_62_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX4_RVT_G1B1I675/Y (NBUFFX4_RVT)                    0.06 @     0.48 r
+  clk_G1B9I675 (net)                           12         0.00       0.48 r
+  U1_u1_Y61_final_2_reg_7_/CLK (DFFX2_RVT)                0.00 @     0.48 r
+  U1_u1_Y61_final_2_reg_7_/CLK (DFFX2_RVT)                0.00       0.48 r
+  U1_u1_Y61_final_2_reg_7_/Q (DFFX2_RVT)                  0.12 @     0.60 f
+  U1_u1_Y61_final_2_7_ (net)                    2         0.00       0.60 f
+  U6176/Y (INVX8_RVT)                                     0.04 @     0.64 r
+  n6188 (net)                                  12         0.00       0.64 r
+  U6172/Y (IBUFFX32_RVT)                                  0.06 @     0.69 f
+  n6184 (net)                                   9         0.00       0.69 f
+  U3581/Y (NBUFFX8_RVT)                                   0.06 @     0.75 f
+  n14180 (net)                                 28         0.00       0.75 f
+  U1_u1_U20501/Y (XNOR2X2_RVT)                            0.06 @     0.81 r
+  U1_u1_n16426 (net)                            1         0.00       0.81 r
+  U3818/Y (NBUFFX4_RVT)                                   0.05 @     0.86 r
+  n14226 (net)                                 18         0.00       0.86 r
+  U1_u1_U11443/Y (NAND2X0_RVT)                            0.09 @     0.94 f
+  U1_u1_n7216 (net)                             5         0.00       0.94 f
+  U1_u1_U5275/Y (OAI22X1_RVT)                             0.08 @     1.02 r
+  U1_u1_n24772 (net)                            1         0.00       1.02 r
+  U8750/Y (NBUFFX2_RVT)                                   0.05 @     1.07 r
+  n8762 (net)                                   8         0.00       1.07 r
+  U1_u1_U10318/Y (XOR3X1_RVT)                             0.11 @     1.19 f
+  U1_u1_n16124 (net)                            2         0.00       1.19 f
+  U1_u1_U1586/Y (XOR2X1_RVT)                              0.08 @     1.27 r
+  U1_u1_n16122 (net)                            3         0.00       1.27 r
+  U1_u1_U9021/Y (XOR3X1_RVT)                              0.13 @     1.39 f
+  U1_u1_n16112 (net)                            1         0.00       1.39 f
+  U1_u1_U20582/S (FADDX1_RVT)                             0.10 @     1.50 r
+  U1_u1_n16209 (net)                            2         0.00       1.50 r
+  U1_u1_U20662/Y (NAND2X0_RVT)                            0.07 @     1.57 f
+  U1_u1_n37601 (net)                            3         0.00       1.57 f
+  U1_u1_U20664/Y (OA21X1_RVT)                             0.08 @     1.64 f
+  U1_u1_n24790 (net)                            2         0.00       1.64 f
+  U1_u1_U11726/Y (INVX0_RVT)                              0.02 @     1.67 r
+  U1_u1_n16212 (net)                            1         0.00       1.67 r
+  U1_u1_U20665/Y (AO21X1_RVT)                             0.03 @     1.70 r
+  U1_u1_n16213 (net)                            2         0.00       1.70 r
+  U1_u1_U20666/Y (OR2X1_RVT)                              0.04 @     1.73 r
+  U1_u1_n16552 (net)                            2         0.00       1.73 r
+  U1_u1_U20668/Y (OA21X1_RVT)                             0.04 @     1.77 r
+  U1_u1_n16556 (net)                            1         0.00       1.77 r
+  U1_u1_U8205/Y (NAND3X0_RVT)                             0.07 @     1.84 f
+  U1_u1_n5846 (net)                             1         0.00       1.84 f
+  U10812/Y (NBUFFX8_RVT)                                  0.06 @     1.90 f
+  n10824 (net)                                  1         0.00       1.90 f
+  U1_u1_U8204/Y (AO22X1_RVT)                              0.06 @     1.96 f
+  U1_u1_n3857 (net)                             1         0.00       1.96 f
+  U1_u1_Z_temp_62_reg_25_/D (DFFX2_RVT)                   0.00 @     1.96 f
+  data arrival time                                                  1.96
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I95/Y (NBUFFX4_RVT)                     0.05 @     2.03 r
+  clk_G1B8I95 (net)                             7         0.00       2.03 r
+  NBUFFX4_RVT_G1B1I285_1/Y (NBUFFX4_RVT)                  0.06 @     2.09 r
+  clk_G1B9I285 (net)                           26         0.00       2.09 r
+  U1_u1_Z_temp_62_reg_25_/CLK (DFFX2_RVT)                 0.00 @     2.09 r
+  clock uncertainty                                      -0.10       1.99
+  U1_u1_Z_temp_62_reg_25_/CLK (DFFX2_RVT)                 0.00       1.99 r
+  library setup time                                     -0.02       1.97
+  data required time                                                 1.97
+  --------------------------------------------------------------------------
+  data required time                                                 1.97
+  data arrival time                                                 -1.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: U1_u1_Y81_final_2_reg_9_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_87_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I1/Y (NBUFFX4_RVT)                      0.09 @     0.10 r
+  clk_G1B2I1 (net)                              1         0.00       0.10 r
+  NBUFFX4_RVT_G1B7I2/Y (NBUFFX4_RVT)                      0.07 @     0.17 r
+  clk_G1B3I2 (net)                              1         0.00       0.17 r
+  NBUFFX4_RVT_G1B6I3/Y (NBUFFX4_RVT)                      0.07 @     0.23 r
+  clk_G1B4I3 (net)                              2         0.00       0.23 r
+  NBUFFX4_RVT_G1B5I4/Y (NBUFFX2_RVT)                      0.05 @     0.29 r
+  clk_G1B5I4 (net)                              1         0.00       0.29 r
+  NBUFFX2_RVT_G1B4I13/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I13 (net)                             4         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I24/Y (NBUFFX4_RVT)                     0.06 @     0.40 r
+  clk_G1B7I24 (net)                             9         0.00       0.40 r
+  NBUFFX2_RVT_G1B1I50/Y (NBUFFX2_RVT)                     0.06 @     0.47 r
+  clk_G1B9I50 (net)                            11         0.00       0.47 r
+  U1_u1_Y81_final_2_reg_9_/CLK (DFFX2_RVT)                0.00 @     0.47 r
+  U1_u1_Y81_final_2_reg_9_/CLK (DFFX2_RVT)                0.00       0.47 r
+  U1_u1_Y81_final_2_reg_9_/QN (DFFX2_RVT)                 0.09 @     0.56 r
+  U1_u1_n7868 (net)                             2         0.00       0.56 r
+  U6033/Y (NBUFFX4_RVT)                                   0.05 @     0.60 r
+  n6045 (net)                                   5         0.00       0.60 r
+  U6034/Y (IBUFFX32_RVT)                                  0.04 @     0.65 f
+  n6046 (net)                                   5         0.00       0.65 f
+  U4301/Y (NBUFFX32_RVT)                                  0.03 @     0.68 f
+  n14307 (net)                                 20         0.00       0.68 f
+  U1_u1_U14780/Y (XNOR2X1_RVT)                            0.06 @     0.74 f
+  U1_u1_n21269 (net)                            1         0.00       0.74 f
+  U6946/Y (DELLN1X2_RVT)                                  0.15 @     0.90 f
+  n6958 (net)                                  14         0.00       0.90 f
+  U1_u1_U1062/Y (NAND2X2_RVT)                             0.08 @     0.97 r
+  U1_u1_n21204 (net)                           13         0.00       0.97 r
+  U1_u1_U1061/Y (OAI22X2_RVT)                             0.06 @     1.03 f
+  U1_u1_n21274 (net)                            3         0.00       1.03 f
+  U1_u1_U24299/Y (NAND2X0_RVT)                            0.03 @     1.06 r
+  U1_u1_n21207 (net)                            1         0.00       1.06 r
+  U1_u1_U24300/Y (NAND3X0_RVT)                            0.05 @     1.11 f
+  U1_u1_n21275 (net)                            1         0.00       1.11 f
+  U1_u1_U24338/S (FADDX1_RVT)                             0.10 @     1.21 r
+  U1_u1_n21335 (net)                            3         0.00       1.21 r
+  U1_u1_U3597/Y (XOR3X1_RVT)                              0.11 @     1.32 f
+  U1_u1_n21338 (net)                            2         0.00       1.32 f
+  U1_u1_U24367/Y (NOR2X0_RVT)                             0.05 @     1.37 r
+  U1_u1_n39441 (net)                            3         0.00       1.37 r
+  U1_u1_U3337/Y (OAI21X1_RVT)                             0.06 @     1.44 f
+  U1_u1_n39431 (net)                            2         0.00       1.44 f
+  U1_u1_U10479/Y (INVX0_RVT)                              0.02 @     1.46 r
+  U1_u1_n39422 (net)                            2         0.00       1.46 r
+  U1_u1_U36870/Y (OAI21X1_RVT)                            0.06 @     1.52 f
+  U1_u1_n39423 (net)                            1         0.00       1.52 f
+  U1_u1_U36871/Y (AOI21X1_RVT)                            0.04 @     1.56 r
+  U1_u1_n39429 (net)                            1         0.00       1.56 r
+  U1_u1_U12778/Y (XOR2X1_RVT)                             0.06 @     1.62 f
+  U1_u1_n39430 (net)                            1         0.00       1.62 f
+  U11446/Y (DELLN1X2_RVT)                                 0.14 @     1.76 f
+  n12101 (net)                                  1         0.00       1.76 f
+  U10086/Y (DELLN1X2_RVT)                                 0.15 @     1.91 f
+  n10098 (net)                                  1         0.00       1.91 f
+  U1_u1_U36874/Y (AO22X1_RVT)                             0.04 @     1.94 f
+  U1_u1_n5233 (net)                             1         0.00       1.94 f
+  U1_u1_Z_temp_87_reg_14_/D (DFFX1_RVT)                   0.00 @     1.94 f
+  data arrival time                                                  1.94
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX2_RVT_G1B7I3/Y (NBUFFX2_RVT)                      0.04 @     1.75 r
+  clk_G1B3I3 (net)                              2         0.00       1.75 r
+  NBUFFX4_RVT_G1B6I4/Y (NBUFFX4_RVT)                      0.05 @     1.80 r
+  clk_G1B4I4 (net)                              3         0.00       1.80 r
+  NBUFFX4_RVT_G1B5I3/Y (NBUFFX2_RVT)                      0.05 @     1.85 r
+  clk_G1B5I3 (net)                              3         0.00       1.85 r
+  NBUFFX4_RVT_G1B4I5/Y (NBUFFX4_RVT)                      0.05 @     1.90 r
+  clk_G1B6I5 (net)                              1         0.00       1.90 r
+  NBUFFX4_RVT_G1B3I25/Y (NBUFFX4_RVT)                     0.06 @     1.96 r
+  clk_G1B7I25 (net)                             4         0.00       1.96 r
+  NBUFFX4_RVT_G1B2I5/Y (NBUFFX4_RVT)                      0.05 @     2.01 r
+  clk_G1B8I5 (net)                              6         0.00       2.01 r
+  NBUFFX4_RVT_G1B1I642/Y (NBUFFX4_RVT)                    0.06 @     2.07 r
+  clk_G1B9I642 (net)                           24         0.00       2.07 r
+  U1_u1_Z_temp_87_reg_14_/CLK (DFFX1_RVT)                 0.00 @     2.07 r
+  clock uncertainty                                      -0.10       1.97
+  U1_u1_Z_temp_87_reg_14_/CLK (DFFX1_RVT)                 0.00       1.97 r
+  library setup time                                     -0.02       1.96
+  data required time                                                 1.96
+  --------------------------------------------------------------------------
+  data required time                                                 1.96
+  data arrival time                                                 -1.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: U1_u1_Ti7_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_65_reg_26_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I57/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I57 (net)                            14         0.00       0.44 r
+  NBUFFX2_RVT_G1B1I65/Y (NBUFFX2_RVT)                     0.06 @     0.50 r
+  clk_G1B9I65 (net)                             5         0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/QN (DFFX2_RVT)               0.09 @     0.60 f
+  U1_u1_n73257 (net)                            2         0.00       0.60 f
+  U5754/Y (NBUFFX32_RVT)                                  0.04 @     0.64 f
+  n5766 (net)                                   6         0.00       0.64 f
+  U5755/Y (NBUFFX16_RVT)                                  0.04 @     0.68 f
+  n5767 (net)                                  16         0.00       0.68 f
+  U1_u1_U25605/Y (NAND2X0_RVT)                            0.07 @     0.76 r
+  U1_u1_n23293 (net)                            1         0.00       0.76 r
+  U7687/Y (DELLN1X2_RVT)                                  0.12 @     0.88 r
+  n7699 (net)                                   1         0.00       0.88 r
+  U7688/Y (IBUFFX32_RVT)                                  0.04 @     0.92 f
+  n7700 (net)                                  28         0.00       0.92 f
+  U1_u1_U13950/Y (NAND2X0_RVT)                            0.07 @     0.99 r
+  U1_u1_n7407 (net)                             1         0.00       0.99 r
+  U1_u1_U13951/Y (NAND3X0_RVT)                            0.07 @     1.06 f
+  U1_u1_n23478 (net)                            3         0.00       1.06 f
+  U1_u1_U13952/Y (NAND2X0_RVT)                            0.05 @     1.11 r
+  U1_u1_n7409 (net)                             1         0.00       1.11 r
+  U1_u1_U13955/Y (NAND3X0_RVT)                            0.07 @     1.18 f
+  U1_u1_n23489 (net)                            2         0.00       1.18 f
+  U1_u1_U25749/Y (XOR3X2_RVT)                             0.11 @     1.29 r
+  U1_u1_n23565 (net)                            3         0.00       1.29 r
+  U1_u1_U25801/Y (XOR3X2_RVT)                             0.10 @     1.39 f
+  U1_u1_n23600 (net)                            3         0.00       1.39 f
+  U1_u1_U13110/Y (NAND2X0_RVT)                            0.03 @     1.42 r
+  U1_u1_n7190 (net)                             1         0.00       1.42 r
+  U1_u1_U7237/Y (NAND3X0_RVT)                             0.06 @     1.48 f
+  U1_u1_n23605 (net)                            3         0.00       1.48 f
+  U1_u1_U7236/Y (XOR3X2_RVT)                              0.11 @     1.59 f
+  U1_u1_n34351 (net)                            3         0.00       1.59 f
+  U1_u1_U25823/Y (NAND2X0_RVT)                            0.05 @     1.64 r
+  U1_u1_n49297 (net)                            3         0.00       1.64 r
+  U1_u1_U25827/Y (OAI21X1_RVT)                            0.07 @     1.72 f
+  U1_u1_n34357 (net)                            3         0.00       1.72 f
+  U1_u1_U25829/Y (NAND2X0_RVT)                            0.03 @     1.75 r
+  U1_u1_n23614 (net)                            1         0.00       1.75 r
+  U1_u1_U14386/Y (AND2X1_RVT)                             0.03 @     1.78 r
+  U1_u1_n7620 (net)                             1         0.00       1.78 r
+  U1_u1_U26076/Y (NAND3X0_RVT)                            0.03 @     1.81 f
+  U1_u1_n24035 (net)                            1         0.00       1.81 f
+  U1_u1_U8085/Y (NAND4X1_RVT)                             0.08 @     1.89 r
+  U1_u1_n24036 (net)                            1         0.00       1.89 r
+  U10884/Y (NBUFFX8_RVT)                                  0.03 @     1.92 r
+  n10896 (net)                                  1         0.00       1.92 r
+  U1_u1_U26077/Y (NAND2X0_RVT)                            0.02 @     1.95 f
+  U1_u1_n4051 (net)                             1         0.00       1.95 f
+  U1_u1_Z_temp_65_reg_26_/D (DFFX1_RVT)                   0.00 @     1.95 f
+  data arrival time                                                  1.95
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     1.88 r
+  clk_G1B5I6 (net)                              3         0.00       1.88 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     1.95 r
+  clk_G1B6I4 (net)                              3         0.00       1.95 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     2.02 r
+  clk_G1B8I82 (net)                             6         0.00       2.02 r
+  NBUFFX4_RVT_G1B1I28_1/Y (NBUFFX2_RVT)                   0.07 @     2.09 r
+  clk_G1B9I28 (net)                             6         0.00       2.09 r
+  U1_u1_Z_temp_65_reg_26_/CLK (DFFX1_RVT)                 0.00 @     2.09 r
+  clock uncertainty                                      -0.10       1.99
+  U1_u1_Z_temp_65_reg_26_/CLK (DFFX1_RVT)                 0.00       1.99 r
+  library setup time                                     -0.02       1.97
+  data required time                                                 1.97
+  --------------------------------------------------------------------------
+  data required time                                                 1.97
+  data arrival time                                                 -1.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: U1_u1_Y61_final_2_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_62_reg_26_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX4_RVT_G1B1I675/Y (NBUFFX4_RVT)                    0.06 @     0.48 r
+  clk_G1B9I675 (net)                           12         0.00       0.48 r
+  U1_u1_Y61_final_2_reg_7_/CLK (DFFX2_RVT)                0.00 @     0.48 r
+  U1_u1_Y61_final_2_reg_7_/CLK (DFFX2_RVT)                0.00       0.48 r
+  U1_u1_Y61_final_2_reg_7_/Q (DFFX2_RVT)                  0.12 @     0.60 f
+  U1_u1_Y61_final_2_7_ (net)                    2         0.00       0.60 f
+  U6176/Y (INVX8_RVT)                                     0.04 @     0.64 r
+  n6188 (net)                                  12         0.00       0.64 r
+  U6172/Y (IBUFFX32_RVT)                                  0.06 @     0.69 f
+  n6184 (net)                                   9         0.00       0.69 f
+  U3581/Y (NBUFFX8_RVT)                                   0.06 @     0.75 f
+  n14180 (net)                                 28         0.00       0.75 f
+  U1_u1_U20501/Y (XNOR2X2_RVT)                            0.06 @     0.81 r
+  U1_u1_n16426 (net)                            1         0.00       0.81 r
+  U3818/Y (NBUFFX4_RVT)                                   0.05 @     0.86 r
+  n14226 (net)                                 18         0.00       0.86 r
+  U1_u1_U11443/Y (NAND2X0_RVT)                            0.09 @     0.94 f
+  U1_u1_n7216 (net)                             5         0.00       0.94 f
+  U1_u1_U5275/Y (OAI22X1_RVT)                             0.08 @     1.02 r
+  U1_u1_n24772 (net)                            1         0.00       1.02 r
+  U8750/Y (NBUFFX2_RVT)                                   0.05 @     1.07 r
+  n8762 (net)                                   8         0.00       1.07 r
+  U1_u1_U10318/Y (XOR3X1_RVT)                             0.11 @     1.19 f
+  U1_u1_n16124 (net)                            2         0.00       1.19 f
+  U1_u1_U1586/Y (XOR2X1_RVT)                              0.08 @     1.27 r
+  U1_u1_n16122 (net)                            3         0.00       1.27 r
+  U1_u1_U9021/Y (XOR3X1_RVT)                              0.13 @     1.39 f
+  U1_u1_n16112 (net)                            1         0.00       1.39 f
+  U1_u1_U20582/S (FADDX1_RVT)                             0.10 @     1.50 r
+  U1_u1_n16209 (net)                            2         0.00       1.50 r
+  U1_u1_U20662/Y (NAND2X0_RVT)                            0.07 @     1.57 f
+  U1_u1_n37601 (net)                            3         0.00       1.57 f
+  U1_u1_U20664/Y (OA21X1_RVT)                             0.08 @     1.64 f
+  U1_u1_n24790 (net)                            2         0.00       1.64 f
+  U1_u1_U26537/Y (OA21X1_RVT)                             0.04 @     1.69 f
+  U1_u1_n24793 (net)                            1         0.00       1.69 f
+  U1_u1_U26539/Y (AND2X1_RVT)                             0.04 @     1.72 f
+  U1_u1_n24802 (net)                            2         0.00       1.72 f
+  U1_u1_U26546/Y (NAND2X0_RVT)                            0.03 @     1.75 r
+  U1_u1_n24803 (net)                            1         0.00       1.75 r
+  U1_u1_U26547/Y (NAND3X0_RVT)                            0.06 @     1.81 f
+  U1_u1_n24806 (net)                            1         0.00       1.81 f
+  U10885/Y (NBUFFX8_RVT)                                  0.06 @     1.88 f
+  n10897 (net)                                  1         0.00       1.88 f
+  U1_u1_U26549/Y (AO22X1_RVT)                             0.07 @     1.95 f
+  U1_u1_n3856 (net)                             1         0.00       1.95 f
+  U1_u1_Z_temp_62_reg_26_/D (DFFX2_RVT)                   0.00 @     1.95 f
+  data arrival time                                                  1.95
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I95/Y (NBUFFX4_RVT)                     0.05 @     2.03 r
+  clk_G1B8I95 (net)                             7         0.00       2.03 r
+  NBUFFX4_RVT_G1B1I285_1/Y (NBUFFX4_RVT)                  0.06 @     2.09 r
+  clk_G1B9I285 (net)                           26         0.00       2.09 r
+  U1_u1_Z_temp_62_reg_26_/CLK (DFFX2_RVT)                 0.00 @     2.09 r
+  clock uncertainty                                      -0.10       1.99
+  U1_u1_Z_temp_62_reg_26_/CLK (DFFX2_RVT)                 0.00       1.99 r
+  library setup time                                     -0.02       1.97
+  data required time                                                 1.97
+  --------------------------------------------------------------------------
+  data required time                                                 1.97
+  data arrival time                                                 -1.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: U1_u2_Z62_int_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u2_Z62_temp_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     0.27 r
+  clk_G1B5I8 (net)                              4         0.00       0.27 r
+  NBUFFX4_RVT_G1B3I22/Y (NBUFFX4_RVT)                     0.05 @     0.33 r
+  clk_G1B7I22 (net)                             4         0.00       0.33 r
+  NBUFFX4_RVT_G1B2I52/Y (NBUFFX4_RVT)                     0.06 @     0.39 r
+  clk_G1B8I52 (net)                             9         0.00       0.39 r
+  NBUFFX4_RVT_G1B1I262_1/Y (NBUFFX4_RVT)                  0.06 @     0.45 r
+  clk_G1B9I262 (net)                           26         0.00       0.45 r
+  U1_u2_Z62_int_reg_1_/CLK (DFFX1_RVT)                    0.00 @     0.45 r
+  U1_u2_Z62_int_reg_1_/CLK (DFFX1_RVT)                    0.00       0.45 r
+  U1_u2_Z62_int_reg_1_/Q (DFFX1_RVT)                      0.10 @     0.54 f
+  U1_u2_Z62_int_1_ (net)                        1         0.00       0.54 f
+  U3254/Y (DELLN1X2_RVT)                                  0.15 @     0.69 f
+  n3266 (net)                                   7         0.00       0.69 f
+  U1_u2_U6610/S (FADDX1_RVT)                              0.10 @     0.79 r
+  U1_u2_n9212 (net)                             1         0.00       0.79 r
+  U1_u2_U6585/SO (HADDX1_RVT)                             0.06 @     0.85 f
+  U1_u2_n9214 (net)                             1         0.00       0.85 f
+  U1_u2_U858/Y (INVX0_RVT)                                0.03 @     0.88 r
+  U1_u2_n9243 (net)                             4         0.00       0.88 r
+  U1_u2_U6627/Y (OAI22X1_RVT)                             0.05 @     0.93 f
+  U1_u2_n9319 (net)                             1         0.00       0.93 f
+  U1_u2_U6671/CO (FADDX1_RVT)                             0.05 @     0.99 f
+  U1_u2_n9325 (net)                             1         0.00       0.99 f
+  U1_u2_U6676/S (FADDX1_RVT)                              0.09 @     1.07 r
+  U1_u2_n9337 (net)                             1         0.00       1.07 r
+  U1_u2_U6683/S (FADDX1_RVT)                              0.09 @     1.16 f
+  U1_u2_n9342 (net)                             2         0.00       1.16 f
+  U1_u2_U6686/Y (NAND2X0_RVT)                             0.03 @     1.19 r
+  U1_u2_n9347 (net)                             1         0.00       1.19 r
+  U1_u2_U582/Y (OAI21X1_RVT)                              0.08 @     1.27 f
+  U1_u2_n9403 (net)                             3         0.00       1.27 f
+  U1_u2_U6726/Y (AOI21X1_RVT)                             0.06 @     1.33 r
+  U1_u2_n9404 (net)                             1         0.00       1.33 r
+  U1_u2_U470/Y (OAI21X2_RVT)                              0.05 @     1.38 f
+  U1_u2_n9584 (net)                             1         0.00       1.38 f
+  U9697/Y (NBUFFX4_RVT)                                   0.04 @     1.42 f
+  n9709 (net)                                   9         0.00       1.42 f
+  U1_u2_U6745/Y (AOI21X1_RVT)                             0.07 @     1.49 r
+  U1_u2_n9447 (net)                             1         0.00       1.49 r
+  U1_u2_U1510/Y (XOR2X1_RVT)                              0.07 @     1.56 f
+  U1_u2_n9448 (net)                             1         0.00       1.56 f
+  U11408/Y (DELLN1X2_RVT)                                 0.14 @     1.70 f
+  n12063 (net)                                  1         0.00       1.70 f
+  U10033/Y (DELLN1X2_RVT)                                 0.15 @     1.85 f
+  n10045 (net)                                  1         0.00       1.85 f
+  U1_u2_U6760/Y (AO22X1_RVT)                              0.04 @     1.89 f
+  U1_u2_n2814 (net)                             1         0.00       1.89 f
+  U1_u2_Z62_temp_reg_14_/D (DFFX1_RVT)                    0.00 @     1.89 f
+  data arrival time                                                  1.89
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX2_RVT_G1B7I3/Y (NBUFFX2_RVT)                      0.04 @     1.75 r
+  clk_G1B3I3 (net)                              2         0.00       1.75 r
+  NBUFFX4_RVT_G1B6I4/Y (NBUFFX4_RVT)                      0.05 @     1.80 r
+  clk_G1B4I4 (net)                              3         0.00       1.80 r
+  NBUFFX4_RVT_G1B5I2/Y (NBUFFX4_RVT)                      0.06 @     1.86 r
+  clk_G1B5I2 (net)                              2         0.00       1.86 r
+  NBUFFX4_RVT_G1B4I3/Y (NBUFFX4_RVT)                      0.06 @     1.92 r
+  clk_G1B6I3 (net)                              5         0.00       1.92 r
+  NBUFFX4_RVT_G1B2I94/Y (NBUFFX4_RVT)                     0.06 @     1.98 r
+  clk_G1B8I94 (net)                             7         0.00       1.98 r
+  NBUFFX4_RVT_G1B1I178_1/Y (NBUFFX4_RVT)                  0.05 @     2.03 r
+  clk_G1B9I178 (net)                           18         0.00       2.03 r
+  U1_u2_Z62_temp_reg_14_/CLK (DFFX1_RVT)                  0.00 @     2.03 r
+  clock uncertainty                                      -0.10       1.93
+  U1_u2_Z62_temp_reg_14_/CLK (DFFX1_RVT)                  0.00       1.93 r
+  library setup time                                     -0.02       1.91
+  data required time                                                 1.91
+  --------------------------------------------------------------------------
+  data required time                                                 1.91
+  data arrival time                                                 -1.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: U1_u1_Y31_final_2_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_37_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I39/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I39 (net)                             8         0.00       0.44 r
+  NBUFFX4_RVT_G1B1I286_1/Y (NBUFFX4_RVT)                  0.06 @     0.50 r
+  clk_G1B9I286 (net)                           12         0.00       0.50 r
+  U1_u1_Y31_final_2_reg_1_/CLK (DFFX2_RVT)                0.00 @     0.50 r
+  U1_u1_Y31_final_2_reg_1_/CLK (DFFX2_RVT)                0.00       0.50 r
+  U1_u1_Y31_final_2_reg_1_/Q (DFFX2_RVT)                  0.11 @     0.61 f
+  U1_u1_Y31_final_2_1_ (net)                    2         0.00       0.61 f
+  U5319/Y (NBUFFX8_RVT)                                   0.05 @     0.66 f
+  n5331 (net)                                  19         0.00       0.66 f
+  U3505/Y (NBUFFX2_RVT)                                   0.06 @     0.72 f
+  n14129 (net)                                  6         0.00       0.72 f
+  U1_u1_U13662/Y (XNOR2X1_RVT)                            0.09 @     0.81 r
+  U1_u1_n15901 (net)                            2         0.00       0.81 r
+  U6924/Y (NBUFFX8_RVT)                                   0.05 @     0.85 r
+  n6936 (net)                                  21         0.00       0.85 r
+  U1_u1_U20159/Y (NAND2X0_RVT)                            0.03 @     0.88 f
+  U1_u1_n15603 (net)                            1         0.00       0.88 f
+  U8174/Y (NBUFFX4_RVT)                                   0.06 @     0.94 f
+  n8186 (net)                                  19         0.00       0.94 f
+  U1_u1_U20358/Y (OAI22X1_RVT)                            0.06 @     1.00 r
+  U1_u1_n15851 (net)                            1         0.00       1.00 r
+  U1_u1_U20369/SO (HADDX1_RVT)                            0.06 @     1.06 f
+  U1_u1_n15845 (net)                            2         0.00       1.06 f
+  U1_u1_U12048/Y (OR2X1_RVT)                              0.03 @     1.10 f
+  U1_u1_n60368 (net)                            2         0.00       1.10 f
+  U1_u1_U20368/Y (NAND2X0_RVT)                            0.03 @     1.13 r
+  U1_u1_n60363 (net)                            2         0.00       1.13 r
+  U1_u1_U20371/Y (AO21X1_RVT)                             0.05 @     1.18 r
+  U1_u1_n15858 (net)                            1         0.00       1.18 r
+  U1_u1_U20373/Y (NAND2X0_RVT)                            0.04 @     1.22 f
+  U1_u1_n60357 (net)                            2         0.00       1.22 f
+  U1_u1_U20375/Y (AOI21X1_RVT)                            0.07 @     1.29 r
+  U1_u1_n60345 (net)                            2         0.00       1.29 r
+  U1_u1_U6985/Y (OR2X1_RVT)                               0.03 @     1.33 r
+  U1_u1_n5660 (net)                             1         0.00       1.33 r
+  U1_u1_U7624/Y (NAND2X0_RVT)                             0.04 @     1.36 f
+  U1_u1_n60333 (net)                            2         0.00       1.36 f
+  U1_u1_U6979/Y (AO21X1_RVT)                              0.07 @     1.44 f
+  U1_u1_n6465 (net)                             4         0.00       1.44 f
+  U1_u1_U6978/Y (NAND3X0_RVT)                             0.03 @     1.47 r
+  U1_u1_n6462 (net)                             1         0.00       1.47 r
+  U1_u1_U7839/Y (NAND3X0_RVT)                             0.05 @     1.52 f
+  U1_u1_n60284 (net)                            2         0.00       1.52 f
+  U1_u1_U7838/Y (NAND3X0_RVT)                             0.04 @     1.56 r
+  U1_u1_n15884 (net)                            1         0.00       1.56 r
+  U1_u1_U20386/Y (AND3X1_RVT)                             0.05 @     1.61 r
+  U1_u1_n60251 (net)                            3         0.00       1.61 r
+  U1_u1_U9860/Y (OAI21X2_RVT)                             0.06 @     1.68 f
+  U1_u1_n60249 (net)                            3         0.00       1.68 f
+  U1_u1_U9859/Y (AO21X1_RVT)                              0.05 @     1.72 f
+  U1_u1_n6460 (net)                             1         0.00       1.72 f
+  U1_u1_U2426/Y (XOR2X1_RVT)                              0.07 @     1.79 r
+  U1_u1_n6113 (net)                             1         0.00       1.79 r
+  U5149/Y (NBUFFX4_RVT)                                   0.05 @     1.84 r
+  n11100 (net)                                  1         0.00       1.84 r
+  U1_u1_U8840/Y (AO22X1_RVT)                              0.05 @     1.89 r
+  U1_u1_n2622 (net)                             1         0.00       1.89 r
+  U1_u1_Z_temp_37_reg_25_/D (DFFX2_RVT)                   0.00 @     1.89 r
+  data arrival time                                                  1.89
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I8/Y (NBUFFX4_RVT)                      0.05 @     1.92 r
+  clk_G1B6I8 (net)                              1         0.00       1.92 r
+  NBUFFX4_RVT_G1B3I29/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I29 (net)                             4         0.00       1.98 r
+  NBUFFX2_RVT_G1B2I9/Y (NBUFFX4_RVT)                      0.06 @     2.04 r
+  clk_G1B8I9 (net)                             16         0.00       2.04 r
+  U1_u1_Z_temp_37_reg_25_/CLK (DFFX2_RVT)                 0.01 @     2.05 r
+  clock uncertainty                                      -0.10       1.95
+  U1_u1_Z_temp_37_reg_25_/CLK (DFFX2_RVT)                 0.00       1.95 r
+  library setup time                                     -0.03       1.92
+  data required time                                                 1.92
+  --------------------------------------------------------------------------
+  data required time                                                 1.92
+  data arrival time                                                 -1.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: U1_u1_Ti7_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_65_reg_24_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I57/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I57 (net)                            14         0.00       0.44 r
+  NBUFFX2_RVT_G1B1I65/Y (NBUFFX2_RVT)                     0.06 @     0.50 r
+  clk_G1B9I65 (net)                             5         0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/QN (DFFX2_RVT)               0.09 @     0.60 f
+  U1_u1_n73257 (net)                            2         0.00       0.60 f
+  U5754/Y (NBUFFX32_RVT)                                  0.04 @     0.64 f
+  n5766 (net)                                   6         0.00       0.64 f
+  U5755/Y (NBUFFX16_RVT)                                  0.04 @     0.68 f
+  n5767 (net)                                  16         0.00       0.68 f
+  U1_u1_U25605/Y (NAND2X0_RVT)                            0.07 @     0.76 r
+  U1_u1_n23293 (net)                            1         0.00       0.76 r
+  U7687/Y (DELLN1X2_RVT)                                  0.12 @     0.88 r
+  n7699 (net)                                   1         0.00       0.88 r
+  U7688/Y (IBUFFX32_RVT)                                  0.04 @     0.92 f
+  n7700 (net)                                  28         0.00       0.92 f
+  U1_u1_U13950/Y (NAND2X0_RVT)                            0.07 @     0.99 r
+  U1_u1_n7407 (net)                             1         0.00       0.99 r
+  U1_u1_U13951/Y (NAND3X0_RVT)                            0.07 @     1.06 f
+  U1_u1_n23478 (net)                            3         0.00       1.06 f
+  U1_u1_U13952/Y (NAND2X0_RVT)                            0.05 @     1.11 r
+  U1_u1_n7409 (net)                             1         0.00       1.11 r
+  U1_u1_U13955/Y (NAND3X0_RVT)                            0.07 @     1.18 f
+  U1_u1_n23489 (net)                            2         0.00       1.18 f
+  U1_u1_U25749/Y (XOR3X2_RVT)                             0.11 @     1.29 r
+  U1_u1_n23565 (net)                            3         0.00       1.29 r
+  U1_u1_U25801/Y (XOR3X2_RVT)                             0.10 @     1.39 f
+  U1_u1_n23600 (net)                            3         0.00       1.39 f
+  U1_u1_U25820/Y (XOR3X2_RVT)                             0.09 @     1.48 f
+  U1_u1_n24009 (net)                            2         0.00       1.48 f
+  U1_u1_U26062/Y (XOR3X2_RVT)                             0.05 @     1.53 r
+  U1_u1_n24025 (net)                            2         0.00       1.53 r
+  U1_u1_U9674/Y (NOR2X0_RVT)                              0.05 @     1.59 f
+  U1_u1_n49305 (net)                            3         0.00       1.59 f
+  U1_u1_U7056/Y (OA21X1_RVT)                              0.04 @     1.62 f
+  U1_u1_n5484 (net)                             1         0.00       1.62 f
+  U1_u1_U7055/Y (OA21X1_RVT)                              0.04 @     1.66 f
+  U1_u1_n34347 (net)                            2         0.00       1.66 f
+  U1_u1_U33057/Y (OAI21X2_RVT)                            0.06 @     1.72 r
+  U1_u1_n34369 (net)                            3         0.00       1.72 r
+  U1_u1_U8274/Y (AO21X1_RVT)                              0.05 @     1.77 r
+  U1_u1_n34359 (net)                            1         0.00       1.77 r
+  U1_u1_U8075/Y (XOR2X1_RVT)                              0.08 @     1.86 f
+  U1_u1_n6096 (net)                             1         0.00       1.86 f
+  U1_u1_U8775/Y (NAND2X0_RVT)                             0.03 @     1.89 r
+  U1_u1_n34360 (net)                            1         0.00       1.89 r
+  U1_u1_U33060/Y (NAND2X0_RVT)                            0.03 @     1.92 f
+  U1_u1_n4053 (net)                             1         0.00       1.92 f
+  U1_u1_Z_temp_65_reg_24_/D (DFFX1_RVT)                   0.00 @     1.92 f
+  data arrival time                                                  1.92
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     1.88 r
+  clk_G1B5I6 (net)                              3         0.00       1.88 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     1.95 r
+  clk_G1B6I4 (net)                              3         0.00       1.95 r
+  NBUFFX4_RVT_G1B2I50/Y (NBUFFX2_RVT)                     0.06 @     2.01 r
+  clk_G1B8I50 (net)                             1         0.00       2.01 r
+  NBUFFX4_RVT_G1B1I503/Y (NBUFFX2_RVT)                    0.06 @     2.07 r
+  clk_G1B9I503 (net)                            6         0.00       2.07 r
+  U1_u1_Z_temp_65_reg_24_/CLK (DFFX1_RVT)                 0.00 @     2.07 r
+  clock uncertainty                                      -0.10       1.97
+  U1_u1_Z_temp_65_reg_24_/CLK (DFFX1_RVT)                 0.00       1.97 r
+  library setup time                                     -0.02       1.94
+  data required time                                                 1.94
+  --------------------------------------------------------------------------
+  data required time                                                 1.94
+  data arrival time                                                 -1.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: U1_u1_Ti4_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_24_reg_22_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX2_RVT_G1B1I1/Y (NBUFFX2_RVT)                      0.05 @     0.47 r
+  clk_G1B9I1 (net)                              4         0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/QN (DFFX2_RVT)               0.08 @     0.55 f
+  U1_u1_n73271 (net)                            2         0.00       0.55 f
+  U11951/Y (DELLN3X2_RVT)                                 0.32 @     0.87 f
+  n12619 (net)                                  1         0.00       0.87 f
+  U1_u1_U34670/Y (NOR2X0_RVT)                             0.05 @     0.92 r
+  U1_u1_n36744 (net)                            1         0.00       0.92 r
+  U1_u1_U34677/C1 (HADDX1_RVT)                            0.04 @     0.97 r
+  U1_u1_n36741 (net)                            1         0.00       0.97 r
+  U1_u1_U34673/S (FADDX1_RVT)                             0.10 @     1.06 f
+  U1_u1_n36749 (net)                            2         0.00       1.06 f
+  U1_u1_U34680/Y (NAND2X0_RVT)                            0.04 @     1.10 r
+  U1_u1_n65310 (net)                            2         0.00       1.10 r
+  U1_u1_U34681/Y (INVX0_RVT)                              0.02 @     1.12 f
+  U1_u1_n36750 (net)                            1         0.00       1.12 f
+  U1_u1_U34682/Y (AOI21X1_RVT)                            0.05 @     1.16 r
+  U1_u1_n65307 (net)                            2         0.00       1.16 r
+  U1_u1_U34687/Y (OAI21X2_RVT)                            0.07 @     1.23 f
+  U1_u1_n65300 (net)                            2         0.00       1.23 f
+  U1_u1_U34690/Y (AOI21X1_RVT)                            0.07 @     1.30 r
+  U1_u1_n65296 (net)                            2         0.00       1.30 r
+  U1_u1_U34692/Y (OAI21X2_RVT)                            0.06 @     1.36 f
+  U1_u1_n65279 (net)                            2         0.00       1.36 f
+  U1_u1_U34695/Y (AOI21X1_RVT)                            0.06 @     1.42 r
+  U1_u1_n65268 (net)                            2         0.00       1.42 r
+  U1_u1_U7333/Y (OR2X1_RVT)                               0.03 @     1.45 r
+  U1_u1_n5566 (net)                             1         0.00       1.45 r
+  U1_u1_U7331/Y (NAND2X0_RVT)                             0.03 @     1.48 f
+  U1_u1_n65248 (net)                            2         0.00       1.48 f
+  U1_u1_U34698/Y (NAND2X0_RVT)                            0.03 @     1.51 r
+  U1_u1_n36777 (net)                            1         0.00       1.51 r
+  U1_u1_U34699/Y (AND2X1_RVT)                             0.04 @     1.55 r
+  U1_u1_n65214 (net)                            2         0.00       1.55 r
+  U1_u1_U8224/Y (OR2X2_RVT)                               0.04 @     1.59 r
+  U1_u1_n65074 (net)                            3         0.00       1.59 r
+  U3363/Y (NAND2X0_RVT)                                   0.05 @     1.63 f
+  n14087 (net)                                  4         0.00       1.63 f
+  U1_u1_U57710/Y (AO21X1_RVT)                             0.06 @     1.69 f
+  U1_u1_n65185 (net)                            1         0.00       1.69 f
+  U1_u1_U2430/Y (XOR2X1_RVT)                              0.08 @     1.77 r
+  U1_u1_n65186 (net)                            1         0.00       1.77 r
+  U10697/Y (NBUFFX32_RVT)                                 0.04 @     1.81 r
+  n10709 (net)                                  1         0.00       1.81 r
+  U1_u1_U8862/Y (AO22X1_RVT)                              0.11 @     1.92 r
+  U1_u1_n1910 (net)                             1         0.00       1.92 r
+  U1_u1_Z_temp_24_reg_22_/D (DFFX1_RVT)                   0.00 @     1.92 r
+  data arrival time                                                  1.92
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I95/Y (NBUFFX4_RVT)                     0.05 @     2.03 r
+  clk_G1B8I95 (net)                             7         0.00       2.03 r
+  NBUFFX4_RVT_G1B1I46_1/Y (NBUFFX4_RVT)                   0.05 @     2.08 r
+  clk_G1B9I46 (net)                            15         0.00       2.08 r
+  U1_u1_Z_temp_24_reg_22_/CLK (DFFX1_RVT)                 0.00 @     2.08 r
+  clock uncertainty                                      -0.10       1.98
+  U1_u1_Z_temp_24_reg_22_/CLK (DFFX1_RVT)                 0.00       1.98 r
+  library setup time                                     -0.03       1.95
+  data required time                                                 1.95
+  --------------------------------------------------------------------------
+  data required time                                                 1.95
+  data arrival time                                                 -1.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: U1_u1_Ti7_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_65_reg_23_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I57/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I57 (net)                            14         0.00       0.44 r
+  NBUFFX2_RVT_G1B1I65/Y (NBUFFX2_RVT)                     0.06 @     0.50 r
+  clk_G1B9I65 (net)                             5         0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/QN (DFFX2_RVT)               0.09 @     0.60 f
+  U1_u1_n73257 (net)                            2         0.00       0.60 f
+  U5754/Y (NBUFFX32_RVT)                                  0.04 @     0.64 f
+  n5766 (net)                                   6         0.00       0.64 f
+  U5755/Y (NBUFFX16_RVT)                                  0.04 @     0.68 f
+  n5767 (net)                                  16         0.00       0.68 f
+  U1_u1_U25605/Y (NAND2X0_RVT)                            0.07 @     0.76 r
+  U1_u1_n23293 (net)                            1         0.00       0.76 r
+  U7687/Y (DELLN1X2_RVT)                                  0.12 @     0.88 r
+  n7699 (net)                                   1         0.00       0.88 r
+  U7688/Y (IBUFFX32_RVT)                                  0.04 @     0.92 f
+  n7700 (net)                                  28         0.00       0.92 f
+  U1_u1_U13950/Y (NAND2X0_RVT)                            0.07 @     0.99 r
+  U1_u1_n7407 (net)                             1         0.00       0.99 r
+  U1_u1_U13951/Y (NAND3X0_RVT)                            0.07 @     1.06 f
+  U1_u1_n23478 (net)                            3         0.00       1.06 f
+  U1_u1_U13952/Y (NAND2X0_RVT)                            0.05 @     1.11 r
+  U1_u1_n7409 (net)                             1         0.00       1.11 r
+  U1_u1_U13955/Y (NAND3X0_RVT)                            0.07 @     1.18 f
+  U1_u1_n23489 (net)                            2         0.00       1.18 f
+  U1_u1_U25749/Y (XOR3X2_RVT)                             0.11 @     1.29 r
+  U1_u1_n23565 (net)                            3         0.00       1.29 r
+  U1_u1_U25801/Y (XOR3X2_RVT)                             0.10 @     1.39 f
+  U1_u1_n23600 (net)                            3         0.00       1.39 f
+  U1_u1_U25820/Y (XOR3X2_RVT)                             0.09 @     1.48 f
+  U1_u1_n24009 (net)                            2         0.00       1.48 f
+  U1_u1_U26062/Y (XOR3X2_RVT)                             0.05 @     1.53 r
+  U1_u1_n24025 (net)                            2         0.00       1.53 r
+  U1_u1_U9674/Y (NOR2X0_RVT)                              0.05 @     1.59 f
+  U1_u1_n49305 (net)                            3         0.00       1.59 f
+  U1_u1_U7056/Y (OA21X1_RVT)                              0.04 @     1.62 f
+  U1_u1_n5484 (net)                             1         0.00       1.62 f
+  U1_u1_U7055/Y (OA21X1_RVT)                              0.04 @     1.66 f
+  U1_u1_n34347 (net)                            2         0.00       1.66 f
+  U1_u1_U33057/Y (OAI21X2_RVT)                            0.06 @     1.72 r
+  U1_u1_n34369 (net)                            3         0.00       1.72 r
+  U1_u1_U33059/Y (AO21X1_RVT)                             0.06 @     1.78 r
+  U1_u1_n34355 (net)                            1         0.00       1.78 r
+  U1_u1_U8074/Y (XOR2X1_RVT)                              0.08 @     1.86 f
+  U1_u1_n6112 (net)                             1         0.00       1.86 f
+  U1_u1_U8196/Y (NAND2X0_RVT)                             0.03 @     1.89 r
+  U1_u1_n5843 (net)                             1         0.00       1.89 r
+  U1_u1_U8195/Y (NAND2X0_RVT)                             0.02 @     1.91 f
+  U1_u1_n4054 (net)                             1         0.00       1.91 f
+  U1_u1_Z_temp_65_reg_23_/D (DFFX1_RVT)                   0.00 @     1.91 f
+  data arrival time                                                  1.91
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     1.88 r
+  clk_G1B5I6 (net)                              3         0.00       1.88 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     1.95 r
+  clk_G1B6I4 (net)                              3         0.00       1.95 r
+  NBUFFX4_RVT_G1B2I50/Y (NBUFFX2_RVT)                     0.06 @     2.01 r
+  clk_G1B8I50 (net)                             1         0.00       2.01 r
+  NBUFFX4_RVT_G1B1I503/Y (NBUFFX2_RVT)                    0.06 @     2.07 r
+  clk_G1B9I503 (net)                            6         0.00       2.07 r
+  U1_u1_Z_temp_65_reg_23_/CLK (DFFX1_RVT)                 0.00 @     2.07 r
+  clock uncertainty                                      -0.10       1.97
+  U1_u1_Z_temp_65_reg_23_/CLK (DFFX1_RVT)                 0.00       1.97 r
+  library setup time                                     -0.02       1.95
+  data required time                                                 1.95
+  --------------------------------------------------------------------------
+  data required time                                                 1.95
+  data arrival time                                                 -1.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: U1_u1_Ti4_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_24_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX2_RVT_G1B1I1/Y (NBUFFX2_RVT)                      0.05 @     0.47 r
+  clk_G1B9I1 (net)                              4         0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/QN (DFFX2_RVT)               0.08 @     0.55 f
+  U1_u1_n73271 (net)                            2         0.00       0.55 f
+  U11951/Y (DELLN3X2_RVT)                                 0.32 @     0.87 f
+  n12619 (net)                                  1         0.00       0.87 f
+  U1_u1_U34670/Y (NOR2X0_RVT)                             0.05 @     0.92 r
+  U1_u1_n36744 (net)                            1         0.00       0.92 r
+  U1_u1_U34677/C1 (HADDX1_RVT)                            0.04 @     0.97 r
+  U1_u1_n36741 (net)                            1         0.00       0.97 r
+  U1_u1_U34673/S (FADDX1_RVT)                             0.10 @     1.06 f
+  U1_u1_n36749 (net)                            2         0.00       1.06 f
+  U1_u1_U34680/Y (NAND2X0_RVT)                            0.04 @     1.10 r
+  U1_u1_n65310 (net)                            2         0.00       1.10 r
+  U1_u1_U34681/Y (INVX0_RVT)                              0.02 @     1.12 f
+  U1_u1_n36750 (net)                            1         0.00       1.12 f
+  U1_u1_U34682/Y (AOI21X1_RVT)                            0.05 @     1.16 r
+  U1_u1_n65307 (net)                            2         0.00       1.16 r
+  U1_u1_U34687/Y (OAI21X2_RVT)                            0.07 @     1.23 f
+  U1_u1_n65300 (net)                            2         0.00       1.23 f
+  U1_u1_U34690/Y (AOI21X1_RVT)                            0.07 @     1.30 r
+  U1_u1_n65296 (net)                            2         0.00       1.30 r
+  U1_u1_U34692/Y (OAI21X2_RVT)                            0.06 @     1.36 f
+  U1_u1_n65279 (net)                            2         0.00       1.36 f
+  U1_u1_U34695/Y (AOI21X1_RVT)                            0.06 @     1.42 r
+  U1_u1_n65268 (net)                            2         0.00       1.42 r
+  U1_u1_U7333/Y (OR2X1_RVT)                               0.03 @     1.45 r
+  U1_u1_n5566 (net)                             1         0.00       1.45 r
+  U1_u1_U7331/Y (NAND2X0_RVT)                             0.03 @     1.48 f
+  U1_u1_n65248 (net)                            2         0.00       1.48 f
+  U1_u1_U34698/Y (NAND2X0_RVT)                            0.03 @     1.51 r
+  U1_u1_n36777 (net)                            1         0.00       1.51 r
+  U1_u1_U34699/Y (AND2X1_RVT)                             0.04 @     1.55 r
+  U1_u1_n65214 (net)                            2         0.00       1.55 r
+  U1_u1_U8224/Y (OR2X2_RVT)                               0.04 @     1.59 r
+  U1_u1_n65074 (net)                            3         0.00       1.59 r
+  U3362/Y (NAND2X4_RVT)                                   0.05 @     1.63 f
+  n14086 (net)                                  4         0.00       1.63 f
+  U1_u1_U57703/Y (AO21X1_RVT)                             0.04 @     1.68 f
+  U1_u1_n65166 (net)                            1         0.00       1.68 f
+  U1_u1_U57705/Y (XOR2X1_RVT)                             0.07 @     1.74 r
+  U1_u1_n65167 (net)                            1         0.00       1.74 r
+  U10843/Y (NBUFFX16_RVT)                                 0.04 @     1.78 r
+  n10855 (net)                                  1         0.00       1.78 r
+  U1_u1_U9661/Y (AO22X1_RVT)                              0.09 @     1.88 r
+  U1_u1_n1907 (net)                             1         0.00       1.88 r
+  U1_u1_Z_temp_24_reg_25_/D (DFFX1_RVT)                   0.00 @     1.88 r
+  data arrival time                                                  1.88
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I13/Y (NBUFFX4_RVT)                     0.06 @     2.04 r
+  clk_G1B8I13 (net)                            17         0.00       2.04 r
+  U1_u1_Z_temp_24_reg_25_/CLK (DFFX1_RVT)                 0.00 @     2.04 r
+  clock uncertainty                                      -0.10       1.94
+  U1_u1_Z_temp_24_reg_25_/CLK (DFFX1_RVT)                 0.00       1.94 r
+  library setup time                                     -0.03       1.91
+  data required time                                                 1.91
+  --------------------------------------------------------------------------
+  data required time                                                 1.91
+  data arrival time                                                 -1.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U1_u1_Ti4_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_24_reg_24_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX2_RVT_G1B1I1/Y (NBUFFX2_RVT)                      0.05 @     0.47 r
+  clk_G1B9I1 (net)                              4         0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/QN (DFFX2_RVT)               0.08 @     0.55 f
+  U1_u1_n73271 (net)                            2         0.00       0.55 f
+  U11951/Y (DELLN3X2_RVT)                                 0.32 @     0.87 f
+  n12619 (net)                                  1         0.00       0.87 f
+  U1_u1_U34670/Y (NOR2X0_RVT)                             0.05 @     0.92 r
+  U1_u1_n36744 (net)                            1         0.00       0.92 r
+  U1_u1_U34677/C1 (HADDX1_RVT)                            0.04 @     0.97 r
+  U1_u1_n36741 (net)                            1         0.00       0.97 r
+  U1_u1_U34673/S (FADDX1_RVT)                             0.10 @     1.06 f
+  U1_u1_n36749 (net)                            2         0.00       1.06 f
+  U1_u1_U34680/Y (NAND2X0_RVT)                            0.04 @     1.10 r
+  U1_u1_n65310 (net)                            2         0.00       1.10 r
+  U1_u1_U34681/Y (INVX0_RVT)                              0.02 @     1.12 f
+  U1_u1_n36750 (net)                            1         0.00       1.12 f
+  U1_u1_U34682/Y (AOI21X1_RVT)                            0.05 @     1.16 r
+  U1_u1_n65307 (net)                            2         0.00       1.16 r
+  U1_u1_U34687/Y (OAI21X2_RVT)                            0.07 @     1.23 f
+  U1_u1_n65300 (net)                            2         0.00       1.23 f
+  U1_u1_U34690/Y (AOI21X1_RVT)                            0.07 @     1.30 r
+  U1_u1_n65296 (net)                            2         0.00       1.30 r
+  U1_u1_U34692/Y (OAI21X2_RVT)                            0.06 @     1.36 f
+  U1_u1_n65279 (net)                            2         0.00       1.36 f
+  U1_u1_U34695/Y (AOI21X1_RVT)                            0.06 @     1.42 r
+  U1_u1_n65268 (net)                            2         0.00       1.42 r
+  U1_u1_U7333/Y (OR2X1_RVT)                               0.03 @     1.45 r
+  U1_u1_n5566 (net)                             1         0.00       1.45 r
+  U1_u1_U7331/Y (NAND2X0_RVT)                             0.03 @     1.48 f
+  U1_u1_n65248 (net)                            2         0.00       1.48 f
+  U1_u1_U34698/Y (NAND2X0_RVT)                            0.03 @     1.51 r
+  U1_u1_n36777 (net)                            1         0.00       1.51 r
+  U1_u1_U34699/Y (AND2X1_RVT)                             0.04 @     1.55 r
+  U1_u1_n65214 (net)                            2         0.00       1.55 r
+  U1_u1_U8224/Y (OR2X2_RVT)                               0.04 @     1.59 r
+  U1_u1_n65074 (net)                            3         0.00       1.59 r
+  U3363/Y (NAND2X0_RVT)                                   0.05 @     1.63 f
+  n14087 (net)                                  4         0.00       1.63 f
+  U1_u1_U57708/Y (AO21X1_RVT)                             0.07 @     1.70 f
+  U1_u1_n65178 (net)                            1         0.00       1.70 f
+  U1_u1_U57709/Y (XOR2X1_RVT)                             0.08 @     1.78 r
+  U1_u1_n65179 (net)                            1         0.00       1.78 r
+  U10842/Y (NBUFFX32_RVT)                                 0.04 @     1.82 r
+  n10854 (net)                                  1         0.00       1.82 r
+  U1_u1_U9721/Y (AO22X1_RVT)                              0.11 @     1.93 r
+  U1_u1_n1908 (net)                             1         0.00       1.93 r
+  U1_u1_Z_temp_24_reg_24_/D (DFFX1_RVT)                   0.00 @     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I95/Y (NBUFFX4_RVT)                     0.05 @     2.03 r
+  clk_G1B8I95 (net)                             7         0.00       2.03 r
+  NBUFFX4_RVT_G1B1I285_1/Y (NBUFFX4_RVT)                  0.06 @     2.09 r
+  clk_G1B9I285 (net)                           26         0.00       2.09 r
+  U1_u1_Z_temp_24_reg_24_/CLK (DFFX1_RVT)                 0.00 @     2.09 r
+  clock uncertainty                                      -0.10       1.99
+  U1_u1_Z_temp_24_reg_24_/CLK (DFFX1_RVT)                 0.00       1.99 r
+  library setup time                                     -0.03       1.96
+  data required time                                                 1.96
+  --------------------------------------------------------------------------
+  data required time                                                 1.96
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U1_u1_Ti4_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_24_reg_20_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX2_RVT_G1B1I1/Y (NBUFFX2_RVT)                      0.05 @     0.47 r
+  clk_G1B9I1 (net)                              4         0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/QN (DFFX2_RVT)               0.08 @     0.55 f
+  U1_u1_n73271 (net)                            2         0.00       0.55 f
+  U11951/Y (DELLN3X2_RVT)                                 0.32 @     0.87 f
+  n12619 (net)                                  1         0.00       0.87 f
+  U1_u1_U34670/Y (NOR2X0_RVT)                             0.05 @     0.92 r
+  U1_u1_n36744 (net)                            1         0.00       0.92 r
+  U1_u1_U34677/C1 (HADDX1_RVT)                            0.04 @     0.97 r
+  U1_u1_n36741 (net)                            1         0.00       0.97 r
+  U1_u1_U34673/S (FADDX1_RVT)                             0.10 @     1.06 f
+  U1_u1_n36749 (net)                            2         0.00       1.06 f
+  U1_u1_U34680/Y (NAND2X0_RVT)                            0.04 @     1.10 r
+  U1_u1_n65310 (net)                            2         0.00       1.10 r
+  U1_u1_U34681/Y (INVX0_RVT)                              0.02 @     1.12 f
+  U1_u1_n36750 (net)                            1         0.00       1.12 f
+  U1_u1_U34682/Y (AOI21X1_RVT)                            0.05 @     1.16 r
+  U1_u1_n65307 (net)                            2         0.00       1.16 r
+  U1_u1_U34687/Y (OAI21X2_RVT)                            0.07 @     1.23 f
+  U1_u1_n65300 (net)                            2         0.00       1.23 f
+  U1_u1_U34690/Y (AOI21X1_RVT)                            0.07 @     1.30 r
+  U1_u1_n65296 (net)                            2         0.00       1.30 r
+  U1_u1_U34692/Y (OAI21X2_RVT)                            0.06 @     1.36 f
+  U1_u1_n65279 (net)                            2         0.00       1.36 f
+  U1_u1_U34695/Y (AOI21X1_RVT)                            0.06 @     1.42 r
+  U1_u1_n65268 (net)                            2         0.00       1.42 r
+  U1_u1_U7333/Y (OR2X1_RVT)                               0.03 @     1.45 r
+  U1_u1_n5566 (net)                             1         0.00       1.45 r
+  U1_u1_U7331/Y (NAND2X0_RVT)                             0.03 @     1.48 f
+  U1_u1_n65248 (net)                            2         0.00       1.48 f
+  U1_u1_U34698/Y (NAND2X0_RVT)                            0.03 @     1.51 r
+  U1_u1_n36777 (net)                            1         0.00       1.51 r
+  U1_u1_U34699/Y (AND2X1_RVT)                             0.04 @     1.55 r
+  U1_u1_n65214 (net)                            2         0.00       1.55 r
+  U1_u1_U8224/Y (OR2X2_RVT)                               0.04 @     1.59 r
+  U1_u1_n65074 (net)                            3         0.00       1.59 r
+  U3363/Y (NAND2X0_RVT)                                   0.05 @     1.63 f
+  n14087 (net)                                  4         0.00       1.63 f
+  U1_u1_U57715/Y (AO21X1_RVT)                             0.06 @     1.69 f
+  U1_u1_n65203 (net)                            1         0.00       1.69 f
+  U1_u1_U10389/Y (XOR2X1_RVT)                             0.08 @     1.77 r
+  U1_u1_n65204 (net)                            1         0.00       1.77 r
+  U10724/Y (NBUFFX32_RVT)                                 0.04 @     1.81 r
+  n10736 (net)                                  1         0.00       1.81 r
+  U1_u1_U9400/Y (AO22X1_RVT)                              0.10 @     1.91 r
+  U1_u1_n1912 (net)                             1         0.00       1.91 r
+  U1_u1_Z_temp_24_reg_20_/D (DFFX1_RVT)                   0.00 @     1.91 r
+  data arrival time                                                  1.91
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I95/Y (NBUFFX4_RVT)                     0.05 @     2.03 r
+  clk_G1B8I95 (net)                             7         0.00       2.03 r
+  NBUFFX4_RVT_G1B1I46_1/Y (NBUFFX4_RVT)                   0.05 @     2.08 r
+  clk_G1B9I46 (net)                            15         0.00       2.08 r
+  U1_u1_Z_temp_24_reg_20_/CLK (DFFX1_RVT)                 0.00 @     2.08 r
+  clock uncertainty                                      -0.10       1.98
+  U1_u1_Z_temp_24_reg_20_/CLK (DFFX1_RVT)                 0.00       1.98 r
+  library setup time                                     -0.03       1.95
+  data required time                                                 1.95
+  --------------------------------------------------------------------------
+  data required time                                                 1.95
+  data arrival time                                                 -1.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U1_u1_Ti7_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_65_reg_21_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I57/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I57 (net)                            14         0.00       0.44 r
+  NBUFFX2_RVT_G1B1I65/Y (NBUFFX2_RVT)                     0.06 @     0.50 r
+  clk_G1B9I65 (net)                             5         0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/QN (DFFX2_RVT)               0.10 @     0.61 r
+  U1_u1_n73257 (net)                            2         0.00       0.61 r
+  U5754/Y (NBUFFX32_RVT)                                  0.04 @     0.65 r
+  n5766 (net)                                   6         0.00       0.65 r
+  U5755/Y (NBUFFX16_RVT)                                  0.04 @     0.69 r
+  n5767 (net)                                  16         0.00       0.69 r
+  U1_u1_U25605/Y (NAND2X0_RVT)                            0.06 @     0.75 f
+  U1_u1_n23293 (net)                            1         0.00       0.75 f
+  U7687/Y (DELLN1X2_RVT)                                  0.13 @     0.88 f
+  n7699 (net)                                   1         0.00       0.88 f
+  U7688/Y (IBUFFX32_RVT)                                  0.05 @     0.93 r
+  n7700 (net)                                  28         0.00       0.93 r
+  U1_u1_U26004/Y (XOR3X2_RVT)                             0.11 @     1.04 f
+  U1_u1_n23889 (net)                            2         0.00       1.04 f
+  U1_u1_U26005/Y (NOR2X0_RVT)                             0.05 @     1.08 r
+  U1_u1_n49426 (net)                            2         0.00       1.08 r
+  U1_u1_U4088/Y (OAI21X1_RVT)                             0.06 @     1.15 f
+  U1_u1_n49423 (net)                            2         0.00       1.15 f
+  U1_u1_U26007/Y (NAND2X0_RVT)                            0.03 @     1.18 r
+  U1_u1_n23890 (net)                            1         0.00       1.18 r
+  U1_u1_U26008/Y (AND2X1_RVT)                             0.04 @     1.21 r
+  U1_u1_n49418 (net)                            2         0.00       1.21 r
+  U1_u1_U8114/Y (OA21X1_RVT)                              0.05 @     1.27 r
+  U1_u1_n49404 (net)                            3         0.00       1.27 r
+  U1_u1_U3401/Y (INVX0_RVT)                               0.02 @     1.29 f
+  U1_u1_n5691 (net)                             1         0.00       1.29 f
+  U1_u1_U7727/Y (NAND3X0_RVT)                             0.02 @     1.31 r
+  U1_u1_n6097 (net)                             1         0.00       1.31 r
+  U1_u1_U7726/Y (NAND3X0_RVT)                             0.06 @     1.37 f
+  U1_u1_n49392 (net)                            3         0.00       1.37 f
+  U1_u1_U7186/Y (AO21X1_RVT)                              0.07 @     1.45 f
+  U1_u1_n49381 (net)                            2         0.00       1.45 f
+  U1_u1_U7184/Y (AND2X1_RVT)                              0.05 @     1.49 f
+  U1_u1_n49365 (net)                            2         0.00       1.49 f
+  U1_u1_U8228/Y (NAND2X0_RVT)                             0.04 @     1.53 r
+  U1_u1_n23936 (net)                            2         0.00       1.53 r
+  U1_u1_U8227/Y (NAND2X0_RVT)                             0.03 @     1.56 f
+  U1_u1_n49335 (net)                            1         0.00       1.56 f
+  U1_u1_U26033/Y (AOI21X1_RVT)                            0.07 @     1.64 r
+  U1_u1_n49302 (net)                            3         0.00       1.64 r
+  U10188/Y (INVX0_RVT)                                    0.04 @     1.68 f
+  n10200 (net)                                  4         0.00       1.68 f
+  U1_u1_U44743/Y (AOI21X1_RVT)                            0.07 @     1.74 r
+  U1_u1_n49309 (net)                            1         0.00       1.74 r
+  U1_u1_U13424/Y (XOR2X1_RVT)                             0.07 @     1.82 f
+  U1_u1_n49310 (net)                            1         0.00       1.82 f
+  U10831/Y (NBUFFX8_RVT)                                  0.05 @     1.87 f
+  n10843 (net)                                  1         0.00       1.87 f
+  U1_u1_U44746/Y (AO22X1_RVT)                             0.08 @     1.94 f
+  U1_u1_n4056 (net)                             1         0.00       1.94 f
+  U1_u1_Z_temp_65_reg_21_/D (DFFX1_RVT)                   0.00 @     1.94 f
+  data arrival time                                                  1.94
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     1.88 r
+  clk_G1B5I6 (net)                              3         0.00       1.88 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     1.94 r
+  clk_G1B6I12 (net)                             2         0.00       1.94 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I26 (net)                             3         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I39/Y (NBUFFX4_RVT)                     0.06 @     2.04 r
+  clk_G1B8I39 (net)                             8         0.00       2.04 r
+  NBUFFX4_RVT_G1B1I45_1/Y (NBUFFX4_RVT)                   0.06 @     2.10 r
+  clk_G1B9I45 (net)                            20         0.00       2.10 r
+  U1_u1_Z_temp_65_reg_21_/CLK (DFFX1_RVT)                 0.00 @     2.10 r
+  clock uncertainty                                      -0.10       2.00
+  U1_u1_Z_temp_65_reg_21_/CLK (DFFX1_RVT)                 0.00       2.00 r
+  library setup time                                     -0.02       1.98
+  data required time                                                 1.98
+  --------------------------------------------------------------------------
+  data required time                                                 1.98
+  data arrival time                                                 -1.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U1_u1_Ti7_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_65_reg_19_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I57/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I57 (net)                            14         0.00       0.44 r
+  NBUFFX2_RVT_G1B1I65/Y (NBUFFX2_RVT)                     0.06 @     0.50 r
+  clk_G1B9I65 (net)                             5         0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/QN (DFFX2_RVT)               0.10 @     0.61 r
+  U1_u1_n73257 (net)                            2         0.00       0.61 r
+  U5754/Y (NBUFFX32_RVT)                                  0.04 @     0.65 r
+  n5766 (net)                                   6         0.00       0.65 r
+  U5755/Y (NBUFFX16_RVT)                                  0.04 @     0.69 r
+  n5767 (net)                                  16         0.00       0.69 r
+  U1_u1_U25605/Y (NAND2X0_RVT)                            0.06 @     0.75 f
+  U1_u1_n23293 (net)                            1         0.00       0.75 f
+  U7687/Y (DELLN1X2_RVT)                                  0.13 @     0.88 f
+  n7699 (net)                                   1         0.00       0.88 f
+  U7688/Y (IBUFFX32_RVT)                                  0.05 @     0.93 r
+  n7700 (net)                                  28         0.00       0.93 r
+  U1_u1_U26004/Y (XOR3X2_RVT)                             0.11 @     1.04 f
+  U1_u1_n23889 (net)                            2         0.00       1.04 f
+  U1_u1_U26005/Y (NOR2X0_RVT)                             0.05 @     1.08 r
+  U1_u1_n49426 (net)                            2         0.00       1.08 r
+  U1_u1_U4088/Y (OAI21X1_RVT)                             0.06 @     1.15 f
+  U1_u1_n49423 (net)                            2         0.00       1.15 f
+  U1_u1_U26007/Y (NAND2X0_RVT)                            0.03 @     1.18 r
+  U1_u1_n23890 (net)                            1         0.00       1.18 r
+  U1_u1_U26008/Y (AND2X1_RVT)                             0.04 @     1.21 r
+  U1_u1_n49418 (net)                            2         0.00       1.21 r
+  U1_u1_U8114/Y (OA21X1_RVT)                              0.05 @     1.27 r
+  U1_u1_n49404 (net)                            3         0.00       1.27 r
+  U1_u1_U3401/Y (INVX0_RVT)                               0.02 @     1.29 f
+  U1_u1_n5691 (net)                             1         0.00       1.29 f
+  U1_u1_U7727/Y (NAND3X0_RVT)                             0.02 @     1.31 r
+  U1_u1_n6097 (net)                             1         0.00       1.31 r
+  U1_u1_U7726/Y (NAND3X0_RVT)                             0.06 @     1.37 f
+  U1_u1_n49392 (net)                            3         0.00       1.37 f
+  U1_u1_U7186/Y (AO21X1_RVT)                              0.07 @     1.45 f
+  U1_u1_n49381 (net)                            2         0.00       1.45 f
+  U1_u1_U7184/Y (AND2X1_RVT)                              0.05 @     1.49 f
+  U1_u1_n49365 (net)                            2         0.00       1.49 f
+  U1_u1_U8228/Y (NAND2X0_RVT)                             0.04 @     1.53 r
+  U1_u1_n23936 (net)                            2         0.00       1.53 r
+  U1_u1_U8227/Y (NAND2X0_RVT)                             0.03 @     1.56 f
+  U1_u1_n49335 (net)                            1         0.00       1.56 f
+  U1_u1_U26033/Y (AOI21X1_RVT)                            0.07 @     1.64 r
+  U1_u1_n49302 (net)                            3         0.00       1.64 r
+  U10188/Y (INVX0_RVT)                                    0.04 @     1.68 f
+  n10200 (net)                                  4         0.00       1.68 f
+  U1_u1_U44752/Y (AOI21X1_RVT)                            0.07 @     1.74 r
+  U1_u1_n49326 (net)                            1         0.00       1.74 r
+  U1_u1_U12832/Y (XOR2X1_RVT)                             0.07 @     1.81 f
+  U1_u1_n49327 (net)                            1         0.00       1.81 f
+  U10828/Y (NBUFFX8_RVT)                                  0.05 @     1.86 f
+  n10840 (net)                                  1         0.00       1.86 f
+  U1_u1_U44755/Y (AO22X1_RVT)                             0.07 @     1.92 f
+  U1_u1_n4058 (net)                             1         0.00       1.92 f
+  U1_u1_Z_temp_65_reg_19_/D (DFFX1_RVT)                   0.00 @     1.92 f
+  data arrival time                                                  1.92
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     1.88 r
+  clk_G1B5I6 (net)                              3         0.00       1.88 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     1.95 r
+  clk_G1B6I4 (net)                              3         0.00       1.95 r
+  NBUFFX4_RVT_G1B2I83/Y (NBUFFX4_RVT)                     0.07 @     2.02 r
+  clk_G1B8I83 (net)                            16         0.00       2.02 r
+  NBUFFX4_RVT_G1B1I263_1/Y (NBUFFX4_RVT)                  0.06 @     2.08 r
+  clk_G1B9I263 (net)                           20         0.00       2.08 r
+  U1_u1_Z_temp_65_reg_19_/CLK (DFFX1_RVT)                 0.00 @     2.08 r
+  clock uncertainty                                      -0.10       1.98
+  U1_u1_Z_temp_65_reg_19_/CLK (DFFX1_RVT)                 0.00       1.98 r
+  library setup time                                     -0.02       1.97
+  data required time                                                 1.97
+  --------------------------------------------------------------------------
+  data required time                                                 1.97
+  data arrival time                                                 -1.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U1_u1_Ti7_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_65_reg_20_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I57/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I57 (net)                            14         0.00       0.44 r
+  NBUFFX2_RVT_G1B1I65/Y (NBUFFX2_RVT)                     0.06 @     0.50 r
+  clk_G1B9I65 (net)                             5         0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/QN (DFFX2_RVT)               0.10 @     0.61 r
+  U1_u1_n73257 (net)                            2         0.00       0.61 r
+  U5754/Y (NBUFFX32_RVT)                                  0.04 @     0.65 r
+  n5766 (net)                                   6         0.00       0.65 r
+  U5755/Y (NBUFFX16_RVT)                                  0.04 @     0.69 r
+  n5767 (net)                                  16         0.00       0.69 r
+  U1_u1_U25605/Y (NAND2X0_RVT)                            0.06 @     0.75 f
+  U1_u1_n23293 (net)                            1         0.00       0.75 f
+  U7687/Y (DELLN1X2_RVT)                                  0.13 @     0.88 f
+  n7699 (net)                                   1         0.00       0.88 f
+  U7688/Y (IBUFFX32_RVT)                                  0.05 @     0.93 r
+  n7700 (net)                                  28         0.00       0.93 r
+  U1_u1_U26004/Y (XOR3X2_RVT)                             0.11 @     1.04 f
+  U1_u1_n23889 (net)                            2         0.00       1.04 f
+  U1_u1_U26005/Y (NOR2X0_RVT)                             0.05 @     1.08 r
+  U1_u1_n49426 (net)                            2         0.00       1.08 r
+  U1_u1_U4088/Y (OAI21X1_RVT)                             0.06 @     1.15 f
+  U1_u1_n49423 (net)                            2         0.00       1.15 f
+  U1_u1_U26007/Y (NAND2X0_RVT)                            0.03 @     1.18 r
+  U1_u1_n23890 (net)                            1         0.00       1.18 r
+  U1_u1_U26008/Y (AND2X1_RVT)                             0.04 @     1.21 r
+  U1_u1_n49418 (net)                            2         0.00       1.21 r
+  U1_u1_U8114/Y (OA21X1_RVT)                              0.05 @     1.27 r
+  U1_u1_n49404 (net)                            3         0.00       1.27 r
+  U1_u1_U3401/Y (INVX0_RVT)                               0.02 @     1.29 f
+  U1_u1_n5691 (net)                             1         0.00       1.29 f
+  U1_u1_U7727/Y (NAND3X0_RVT)                             0.02 @     1.31 r
+  U1_u1_n6097 (net)                             1         0.00       1.31 r
+  U1_u1_U7726/Y (NAND3X0_RVT)                             0.06 @     1.37 f
+  U1_u1_n49392 (net)                            3         0.00       1.37 f
+  U1_u1_U7186/Y (AO21X1_RVT)                              0.07 @     1.45 f
+  U1_u1_n49381 (net)                            2         0.00       1.45 f
+  U1_u1_U7184/Y (AND2X1_RVT)                              0.05 @     1.49 f
+  U1_u1_n49365 (net)                            2         0.00       1.49 f
+  U1_u1_U8228/Y (NAND2X0_RVT)                             0.04 @     1.53 r
+  U1_u1_n23936 (net)                            2         0.00       1.53 r
+  U1_u1_U8227/Y (NAND2X0_RVT)                             0.03 @     1.56 f
+  U1_u1_n49335 (net)                            1         0.00       1.56 f
+  U1_u1_U26033/Y (AOI21X1_RVT)                            0.07 @     1.64 r
+  U1_u1_n49302 (net)                            3         0.00       1.64 r
+  U10188/Y (INVX0_RVT)                                    0.04 @     1.68 f
+  n10200 (net)                                  4         0.00       1.68 f
+  U1_u1_U44747/Y (AOI21X1_RVT)                            0.07 @     1.74 r
+  U1_u1_n49318 (net)                            1         0.00       1.74 r
+  U1_u1_U12411/Y (XOR2X1_RVT)                             0.07 @     1.81 f
+  U1_u1_n49319 (net)                            1         0.00       1.81 f
+  U10824/Y (NBUFFX8_RVT)                                  0.05 @     1.86 f
+  n10836 (net)                                  1         0.00       1.86 f
+  U1_u1_U44750/Y (AO22X1_RVT)                             0.06 @     1.92 f
+  U1_u1_n4057 (net)                             1         0.00       1.92 f
+  U1_u1_Z_temp_65_reg_20_/D (DFFX1_RVT)                   0.00 @     1.92 f
+  data arrival time                                                  1.92
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     1.88 r
+  clk_G1B5I6 (net)                              3         0.00       1.88 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     1.95 r
+  clk_G1B6I4 (net)                              3         0.00       1.95 r
+  NBUFFX4_RVT_G1B2I83/Y (NBUFFX4_RVT)                     0.07 @     2.02 r
+  clk_G1B8I83 (net)                            16         0.00       2.02 r
+  NBUFFX4_RVT_G1B1I263_1/Y (NBUFFX4_RVT)                  0.06 @     2.08 r
+  clk_G1B9I263 (net)                           20         0.00       2.08 r
+  U1_u1_Z_temp_65_reg_20_/CLK (DFFX1_RVT)                 0.00 @     2.08 r
+  clock uncertainty                                      -0.10       1.98
+  U1_u1_Z_temp_65_reg_20_/CLK (DFFX1_RVT)                 0.00       1.98 r
+  library setup time                                     -0.02       1.97
+  data required time                                                 1.97
+  --------------------------------------------------------------------------
+  data required time                                                 1.97
+  data arrival time                                                 -1.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U1_u1_Ti4_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_24_reg_21_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX2_RVT_G1B1I1/Y (NBUFFX2_RVT)                      0.05 @     0.47 r
+  clk_G1B9I1 (net)                              4         0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.47 r
+  U1_u1_Ti4_mul_input_reg_0_/QN (DFFX2_RVT)               0.08 @     0.55 f
+  U1_u1_n73271 (net)                            2         0.00       0.55 f
+  U11951/Y (DELLN3X2_RVT)                                 0.32 @     0.87 f
+  n12619 (net)                                  1         0.00       0.87 f
+  U1_u1_U34670/Y (NOR2X0_RVT)                             0.05 @     0.92 r
+  U1_u1_n36744 (net)                            1         0.00       0.92 r
+  U1_u1_U34677/C1 (HADDX1_RVT)                            0.04 @     0.97 r
+  U1_u1_n36741 (net)                            1         0.00       0.97 r
+  U1_u1_U34673/S (FADDX1_RVT)                             0.10 @     1.06 f
+  U1_u1_n36749 (net)                            2         0.00       1.06 f
+  U1_u1_U34680/Y (NAND2X0_RVT)                            0.04 @     1.10 r
+  U1_u1_n65310 (net)                            2         0.00       1.10 r
+  U1_u1_U34681/Y (INVX0_RVT)                              0.02 @     1.12 f
+  U1_u1_n36750 (net)                            1         0.00       1.12 f
+  U1_u1_U34682/Y (AOI21X1_RVT)                            0.05 @     1.16 r
+  U1_u1_n65307 (net)                            2         0.00       1.16 r
+  U1_u1_U34687/Y (OAI21X2_RVT)                            0.07 @     1.23 f
+  U1_u1_n65300 (net)                            2         0.00       1.23 f
+  U1_u1_U34690/Y (AOI21X1_RVT)                            0.07 @     1.30 r
+  U1_u1_n65296 (net)                            2         0.00       1.30 r
+  U1_u1_U34692/Y (OAI21X2_RVT)                            0.06 @     1.36 f
+  U1_u1_n65279 (net)                            2         0.00       1.36 f
+  U1_u1_U34695/Y (AOI21X1_RVT)                            0.06 @     1.42 r
+  U1_u1_n65268 (net)                            2         0.00       1.42 r
+  U1_u1_U7333/Y (OR2X1_RVT)                               0.03 @     1.45 r
+  U1_u1_n5566 (net)                             1         0.00       1.45 r
+  U1_u1_U7331/Y (NAND2X0_RVT)                             0.03 @     1.48 f
+  U1_u1_n65248 (net)                            2         0.00       1.48 f
+  U1_u1_U34698/Y (NAND2X0_RVT)                            0.03 @     1.51 r
+  U1_u1_n36777 (net)                            1         0.00       1.51 r
+  U1_u1_U34699/Y (AND2X1_RVT)                             0.04 @     1.55 r
+  U1_u1_n65214 (net)                            2         0.00       1.55 r
+  U1_u1_U8224/Y (OR2X2_RVT)                               0.04 @     1.59 r
+  U1_u1_n65074 (net)                            3         0.00       1.59 r
+  U3363/Y (NAND2X0_RVT)                                   0.05 @     1.63 f
+  n14087 (net)                                  4         0.00       1.63 f
+  U1_u1_U57713/Y (AO21X1_RVT)                             0.06 @     1.69 f
+  U1_u1_n65195 (net)                            1         0.00       1.69 f
+  U1_u1_U10390/Y (XOR2X1_RVT)                             0.08 @     1.77 r
+  U1_u1_n65196 (net)                            1         0.00       1.77 r
+  U10723/Y (NBUFFX32_RVT)                                 0.04 @     1.81 r
+  n10735 (net)                                  1         0.00       1.81 r
+  U1_u1_U8863/Y (AO22X1_RVT)                              0.11 @     1.92 r
+  U1_u1_n1911 (net)                             1         0.00       1.92 r
+  U1_u1_Z_temp_24_reg_21_/D (DFFX1_RVT)                   0.00 @     1.92 r
+  data arrival time                                                  1.92
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I95/Y (NBUFFX4_RVT)                     0.05 @     2.03 r
+  clk_G1B8I95 (net)                             7         0.00       2.03 r
+  NBUFFX4_RVT_G1B1I285_1/Y (NBUFFX4_RVT)                  0.06 @     2.09 r
+  clk_G1B9I285 (net)                           26         0.00       2.09 r
+  U1_u1_Z_temp_24_reg_21_/CLK (DFFX1_RVT)                 0.00 @     2.09 r
+  clock uncertainty                                      -0.10       1.99
+  U1_u1_Z_temp_24_reg_21_/CLK (DFFX1_RVT)                 0.00       1.99 r
+  library setup time                                     -0.03       1.96
+  data required time                                                 1.96
+  --------------------------------------------------------------------------
+  data required time                                                 1.96
+  data arrival time                                                 -1.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U1_u1_Y21_final_2_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_25_reg_26_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX4_RVT_G1B1I490/Y (NBUFFX4_RVT)                    0.05 @     0.47 r
+  clk_G1B9I490 (net)                           12         0.00       0.47 r
+  U1_u1_Y21_final_2_reg_3_/CLK (DFFX1_RVT)                0.00 @     0.47 r
+  U1_u1_Y21_final_2_reg_3_/CLK (DFFX1_RVT)                0.00       0.47 r
+  U1_u1_Y21_final_2_reg_3_/QN (DFFX1_RVT)                 0.11 @     0.59 r
+  U1_u1_n7998 (net)                             2         0.00       0.59 r
+  U5550/Y (INVX8_RVT)                                     0.02 @     0.61 f
+  n5562 (net)                                   3         0.00       0.61 f
+  U5554/Y (INVX16_RVT)                                    0.03 @     0.64 r
+  n5566 (net)                                  26         0.00       0.64 r
+  U8759/Y (NBUFFX8_RVT)                                   0.05 @     0.68 r
+  n11802 (net)                                  1         0.00       0.68 r
+  U8762/Y (INVX8_RVT)                                     0.05 @     0.73 f
+  n14908 (net)                                 15         0.00       0.73 f
+  U5551/Y (NBUFFX8_RVT)                                   0.07 @     0.80 f
+  n5563 (net)                                  16         0.00       0.80 f
+  U5552/Y (INVX2_RVT)                                     0.05 @     0.86 r
+  n5564 (net)                                   6         0.00       0.86 r
+  U1_u1_U11414/Y (XOR2X1_RVT)                             0.07 @     0.93 f
+  U1_u1_n30384 (net)                            1         0.00       0.93 f
+  U7539/Y (NBUFFX4_RVT)                                   0.05 @     0.97 f
+  n7551 (net)                                  12         0.00       0.97 f
+  U1_u1_U1156/Y (NAND2X2_RVT)                             0.07 @     1.04 r
+  U1_u1_n64629 (net)                           11         0.00       1.04 r
+  U1_u1_U454/Y (OAI22X1_RVT)                              0.05 @     1.09 f
+  U1_u1_n30618 (net)                            1         0.00       1.09 f
+  U8367/Y (NBUFFX4_RVT)                                   0.03 @     1.13 f
+  n8379 (net)                                   6         0.00       1.13 f
+  U1_u1_U30653/SO (HADDX1_RVT)                            0.07 @     1.19 r
+  U1_u1_n30559 (net)                            1         0.00       1.19 r
+  U1_u1_U30651/S (FADDX1_RVT)                             0.09 @     1.28 f
+  U1_u1_n30554 (net)                            1         0.00       1.28 f
+  U1_u1_U30649/S (FADDX1_RVT)                             0.09 @     1.37 r
+  U1_u1_n30605 (net)                            2         0.00       1.37 r
+  U1_u1_U30648/Y (NAND2X0_RVT)                            0.04 @     1.41 f
+  U1_u1_n64794 (net)                            3         0.00       1.41 f
+  U1_u1_U30655/Y (OAI21X2_RVT)                            0.08 @     1.49 r
+  U1_u1_n30607 (net)                            2         0.00       1.49 r
+  U1_u1_U30690/Y (OR2X1_RVT)                              0.03 @     1.53 r
+  U1_u1_n64753 (net)                            2         0.00       1.53 r
+  U1_u1_U30712/Y (NAND4X0_RVT)                            0.04 @     1.57 f
+  U1_u1_n30672 (net)                            1         0.00       1.57 f
+  U1_u1_U30717/Y (NAND3X0_RVT)                            0.06 @     1.63 r
+  U1_u1_n64697 (net)                            3         0.00       1.63 r
+  U1_u1_U30718/Y (NAND3X0_RVT)                            0.07 @     1.70 f
+  U1_u1_n64677 (net)                            4         0.00       1.70 f
+  U1_u1_U9311/Y (NAND3X0_RVT)                             0.04 @     1.75 r
+  U1_u1_n6263 (net)                             1         0.00       1.75 r
+  U1_u1_U9310/Y (NAND2X0_RVT)                             0.03 @     1.78 f
+  U1_u1_n64673 (net)                            1         0.00       1.78 f
+  U1_u1_U12430/Y (XOR2X1_RVT)                             0.07 @     1.85 r
+  U1_u1_n64674 (net)                            1         0.00       1.85 r
+  U10827/Y (NBUFFX8_RVT)                                  0.03 @     1.89 r
+  n10839 (net)                                  1         0.00       1.89 r
+  U1_u1_U9301/Y (AO22X1_RVT)                              0.04 @     1.92 r
+  U1_u1_n1971 (net)                             1         0.00       1.92 r
+  U1_u1_Z_temp_25_reg_26_/D (DFFX1_RVT)                   0.00 @     1.92 r
+  data arrival time                                                  1.92
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I29/Y (NBUFFX4_RVT)                     0.06 @     2.03 r
+  clk_G1B8I29 (net)                             9         0.00       2.03 r
+  NBUFFX4_RVT_G1B1I619/Y (NBUFFX4_RVT)                    0.06 @     2.09 r
+  clk_G1B9I619 (net)                           22         0.00       2.09 r
+  U1_u1_Z_temp_25_reg_26_/CLK (DFFX1_RVT)                 0.00 @     2.09 r
+  clock uncertainty                                      -0.10       1.99
+  U1_u1_Z_temp_25_reg_26_/CLK (DFFX1_RVT)                 0.00       1.99 r
+  library setup time                                     -0.03       1.97
+  data required time                                                 1.97
+  --------------------------------------------------------------------------
+  data required time                                                 1.97
+  data arrival time                                                 -1.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U1_u1_Ti7_mul_input_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_65_reg_22_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     0.34 r
+  clk_G1B6I12 (net)                             2         0.00       0.34 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     0.38 r
+  clk_G1B7I26 (net)                             3         0.00       0.38 r
+  NBUFFX4_RVT_G1B2I57/Y (NBUFFX4_RVT)                     0.06 @     0.44 r
+  clk_G1B8I57 (net)                            14         0.00       0.44 r
+  NBUFFX2_RVT_G1B1I65/Y (NBUFFX2_RVT)                     0.06 @     0.50 r
+  clk_G1B9I65 (net)                             5         0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00 @     0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/CLK (DFFX2_RVT)              0.00       0.50 r
+  U1_u1_Ti7_mul_input_reg_0_/QN (DFFX2_RVT)               0.09 @     0.60 f
+  U1_u1_n73257 (net)                            2         0.00       0.60 f
+  U5754/Y (NBUFFX32_RVT)                                  0.04 @     0.64 f
+  n5766 (net)                                   6         0.00       0.64 f
+  U5755/Y (NBUFFX16_RVT)                                  0.04 @     0.68 f
+  n5767 (net)                                  16         0.00       0.68 f
+  U1_u1_U25605/Y (NAND2X0_RVT)                            0.07 @     0.76 r
+  U1_u1_n23293 (net)                            1         0.00       0.76 r
+  U7687/Y (DELLN1X2_RVT)                                  0.12 @     0.88 r
+  n7699 (net)                                   1         0.00       0.88 r
+  U7688/Y (IBUFFX32_RVT)                                  0.04 @     0.92 f
+  n7700 (net)                                  28         0.00       0.92 f
+  U1_u1_U13950/Y (NAND2X0_RVT)                            0.07 @     0.99 r
+  U1_u1_n7407 (net)                             1         0.00       0.99 r
+  U1_u1_U13951/Y (NAND3X0_RVT)                            0.07 @     1.06 f
+  U1_u1_n23478 (net)                            3         0.00       1.06 f
+  U1_u1_U13952/Y (NAND2X0_RVT)                            0.05 @     1.11 r
+  U1_u1_n7409 (net)                             1         0.00       1.11 r
+  U1_u1_U13955/Y (NAND3X0_RVT)                            0.07 @     1.18 f
+  U1_u1_n23489 (net)                            2         0.00       1.18 f
+  U1_u1_U25749/Y (XOR3X2_RVT)                             0.11 @     1.29 r
+  U1_u1_n23565 (net)                            3         0.00       1.29 r
+  U1_u1_U25801/Y (XOR3X2_RVT)                             0.10 @     1.39 f
+  U1_u1_n23600 (net)                            3         0.00       1.39 f
+  U1_u1_U25820/Y (XOR3X2_RVT)                             0.09 @     1.48 r
+  U1_u1_n24009 (net)                            2         0.00       1.48 r
+  U1_u1_U26062/Y (XOR3X2_RVT)                             0.05 @     1.53 f
+  U1_u1_n24025 (net)                            2         0.00       1.53 f
+  U1_u1_U9674/Y (NOR2X0_RVT)                              0.05 @     1.59 r
+  U1_u1_n49305 (net)                            3         0.00       1.59 r
+  U1_u1_U7056/Y (OA21X1_RVT)                              0.04 @     1.62 r
+  U1_u1_n5484 (net)                             1         0.00       1.62 r
+  U1_u1_U7055/Y (OA21X1_RVT)                              0.04 @     1.66 r
+  U1_u1_n34347 (net)                            2         0.00       1.66 r
+  U1_u1_U26072/Y (OAI21X1_RVT)                            0.07 @     1.73 f
+  U1_u1_n49299 (net)                            3         0.00       1.73 f
+  U1_u1_U44739/Y (XNOR2X1_RVT)                            0.08 @     1.81 r
+  U1_u1_n49301 (net)                            1         0.00       1.81 r
+  U10785/Y (NBUFFX8_RVT)                                  0.05 @     1.86 r
+  n10797 (net)                                  1         0.00       1.86 r
+  U1_u1_U44740/Y (AO22X1_RVT)                             0.07 @     1.93 r
+  U1_u1_n4055 (net)                             1         0.00       1.93 r
+  U1_u1_Z_temp_65_reg_22_/D (DFFX1_RVT)                   0.00 @     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     1.88 r
+  clk_G1B5I6 (net)                              3         0.00       1.88 r
+  NBUFFX4_RVT_G1B4I12/Y (NBUFFX4_RVT)                     0.05 @     1.94 r
+  clk_G1B6I12 (net)                             2         0.00       1.94 r
+  NBUFFX4_RVT_G1B3I26/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I26 (net)                             3         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I39/Y (NBUFFX4_RVT)                     0.06 @     2.04 r
+  clk_G1B8I39 (net)                             8         0.00       2.04 r
+  NBUFFX4_RVT_G1B1I286_1/Y (NBUFFX4_RVT)                  0.06 @     2.10 r
+  clk_G1B9I286 (net)                           12         0.00       2.10 r
+  U1_u1_Z_temp_65_reg_22_/CLK (DFFX1_RVT)                 0.00 @     2.10 r
+  clock uncertainty                                      -0.10       2.00
+  U1_u1_Z_temp_65_reg_22_/CLK (DFFX1_RVT)                 0.00       2.00 r
+  library setup time                                     -0.03       1.97
+  data required time                                                 1.97
+  --------------------------------------------------------------------------
+  data required time                                                 1.97
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: U1_u1_Ti6_mul_input_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1_u1_Z_temp_24_reg_26_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clk (in)                                                0.02 @     0.02 r
+  clk (net)                                     2         0.00       0.02 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     0.11 r
+  clk_G1B2I2 (net)                              2         0.00       0.11 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     0.16 r
+  clk_G1B3I1 (net)                              1         0.00       0.16 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     0.22 r
+  clk_G1B4I2 (net)                              2         0.00       0.22 r
+  NBUFFX4_RVT_G1B5I6/Y (NBUFFX4_RVT)                      0.06 @     0.28 r
+  clk_G1B5I6 (net)                              3         0.00       0.28 r
+  NBUFFX4_RVT_G1B4I4/Y (NBUFFX4_RVT)                      0.06 @     0.35 r
+  clk_G1B6I4 (net)                              3         0.00       0.35 r
+  NBUFFX4_RVT_G1B2I82/Y (NBUFFX4_RVT)                     0.07 @     0.42 r
+  clk_G1B8I82 (net)                             6         0.00       0.42 r
+  NBUFFX4_RVT_G1B1I26_1/Y (NBUFFX4_RVT)                   0.06 @     0.48 r
+  clk_G1B9I26 (net)                            22         0.00       0.48 r
+  U1_u1_Ti6_mul_input_reg_4_/CLK (DFFX1_RVT)              0.00 @     0.49 r
+  U1_u1_Ti6_mul_input_reg_4_/CLK (DFFX1_RVT)              0.00       0.49 r
+  U1_u1_Ti6_mul_input_reg_4_/Q (DFFX1_RVT)                0.11 @     0.59 f
+  U1_u1_Ti6_mul_input_4_ (net)                  1         0.00       0.59 f
+  U5922/Y (NBUFFX16_RVT)                                  0.05 @     0.64 f
+  n5934 (net)                                  10         0.00       0.64 f
+  U5927/Y (NBUFFX8_RVT)                                   0.06 @     0.70 f
+  n5939 (net)                                  24         0.00       0.70 f
+  U1_u1_U1478/Y (NAND2X0_RVT)                             0.11 @     0.81 r
+  U1_u1_n65019 (net)                            1         0.00       0.81 r
+  U7426/Y (INVX8_RVT)                                     0.04 @     0.85 f
+  n7438 (net)                                   9         0.00       0.85 f
+  U1_u1_U34503/CO (FADDX1_RVT)                            0.10 @     0.94 f
+  U1_u1_n36448 (net)                            3         0.00       0.94 f
+  U1_u1_U464/Y (XOR3X1_RVT)                               0.11 @     1.06 f
+  U1_u1_n36431 (net)                            3         0.00       1.06 f
+  U1_u1_U13088/Y (NAND2X0_RVT)                            0.03 @     1.09 r
+  U1_u1_n6894 (net)                             1         0.00       1.09 r
+  U1_u1_U13091/Y (NAND3X0_RVT)                            0.05 @     1.14 f
+  U1_u1_n36481 (net)                            1         0.00       1.14 f
+  U1_u1_U34538/S (FADDX1_RVT)                             0.11 @     1.25 r
+  U1_u1_n36486 (net)                            3         0.00       1.25 r
+  U1_u1_U8299/Y (OR2X1_RVT)                               0.04 @     1.29 r
+  U1_u1_n5879 (net)                             1         0.00       1.29 r
+  U1_u1_U8298/Y (AO22X1_RVT)                              0.05 @     1.34 r
+  U1_u1_n36784 (net)                            2         0.00       1.34 r
+  U1_u1_U34539/Y (NAND2X0_RVT)                            0.10 @     1.44 f
+  U1_u1_n65183 (net)                            4         0.00       1.44 f
+  U1_u1_U57667/Y (OAI21X1_RVT)                            0.10 @     1.54 r
+  U1_u1_n65171 (net)                            3         0.00       1.54 r
+  U1_u1_U57671/Y (AOI21X1_RVT)                            0.06 @     1.60 f
+  U1_u1_n65086 (net)                            1         0.00       1.60 f
+  U1_u1_U57674/Y (NAND2X0_RVT)                            0.04 @     1.64 r
+  U1_u1_n65087 (net)                            1         0.00       1.64 r
+  U1_u1_U57675/Y (AO21X1_RVT)                             0.04 @     1.68 r
+  U1_u1_n65153 (net)                            1         0.00       1.68 r
+  U1_u1_U57697/Y (XOR2X1_RVT)                             0.08 @     1.76 f
+  U1_u1_n65154 (net)                            1         0.00       1.76 f
+  U10844/Y (NBUFFX32_RVT)                                 0.04 @     1.80 f
+  n10856 (net)                                  1         0.00       1.80 f
+  U1_u1_U9660/Y (AO22X1_RVT)                              0.11 @     1.91 f
+  U1_u1_n1906 (net)                             1         0.00       1.91 f
+  U1_u1_Z_temp_24_reg_26_/D (DFFX1_RVT)                   0.00 @     1.91 f
+  data arrival time                                                  1.91
+
+  clock clk (rise edge)                                   1.60       1.60
+  clk (in)                                                0.02 @     1.62 r
+  clk (net)                                     2         0.00       1.62 r
+  NBUFFX4_RVT_G1B8I2/Y (NBUFFX4_RVT)                      0.09 @     1.71 r
+  clk_G1B2I2 (net)                              2         0.00       1.71 r
+  NBUFFX4_RVT_G1B7I1/Y (NBUFFX4_RVT)                      0.06 @     1.76 r
+  clk_G1B3I1 (net)                              1         0.00       1.76 r
+  NBUFFX4_RVT_G1B6I2/Y (NBUFFX4_RVT)                      0.06 @     1.82 r
+  clk_G1B4I2 (net)                              2         0.00       1.82 r
+  NBUFFX4_RVT_G1B5I8/Y (NBUFFX4_RVT)                      0.05 @     1.87 r
+  clk_G1B5I8 (net)                              4         0.00       1.87 r
+  NBUFFX4_RVT_G1B4I2/Y (NBUFFX2_RVT)                      0.05 @     1.93 r
+  clk_G1B6I2 (net)                              1         0.00       1.93 r
+  NBUFFX4_RVT_G1B3I10/Y (NBUFFX4_RVT)                     0.05 @     1.98 r
+  clk_G1B7I10 (net)                             4         0.00       1.98 r
+  NBUFFX4_RVT_G1B2I95/Y (NBUFFX4_RVT)                     0.05 @     2.03 r
+  clk_G1B8I95 (net)                             7         0.00       2.03 r
+  NBUFFX4_RVT_G1B1I46_1/Y (NBUFFX4_RVT)                   0.05 @     2.08 r
+  clk_G1B9I46 (net)                            15         0.00       2.08 r
+  U1_u1_Z_temp_24_reg_26_/CLK (DFFX1_RVT)                 0.00 @     2.08 r
+  clock uncertainty                                      -0.10       1.98
+  U1_u1_Z_temp_24_reg_26_/CLK (DFFX1_RVT)                 0.00       1.98 r
+  library setup time                                     -0.02       1.96
+  data required time                                                 1.96
+  --------------------------------------------------------------------------
+  data required time                                                 1.96
+  data arrival time                                                 -1.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+1
