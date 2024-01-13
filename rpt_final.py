@@ -5,7 +5,7 @@ import sys
 
 # Check if the correct number of command-line arguments is provided
 if len(sys.argv) != 2:
-    print("Usage: python rpt.py <file_path>")
+    print("Usage: python rpt_final.py <file_path>")
     sys.exit(1)
 
 # Extract the file path from the command-line arguments
@@ -52,7 +52,8 @@ num_line = min(len(lines_containing_slack_time), len(lines_end_point), len(lines
 
 # Create a PrettyTable object
 table = PrettyTable()
-table.field_names = ["Slack","Start point", "End Point",  "Path type","Path group"]
+table.field_names = ["Index","Slack","Start point", "End Point",  "Path type","Path group"]
+#table.field_names = ["Index", "Slack", "End Point", "Startpoint", "Path type"]
 
 # Add data to the table
 for i in range(num_line):
@@ -62,7 +63,9 @@ for i in range(num_line):
     path_type_line = lines_path_type[i]
     path_group_line=lines_path_group[i]
 
-    table.add_row([slack_line, end_point_line, start_point_line, path_type_line,path_group_line])
+    table.add_row([i+1,slack_line, end_point_line, start_point_line, path_type_line,path_group_line])
+    #table.add_row([i + 1, slack_line, end_point_line, start_point_line, path_type_line])
+
 
 # Print the table to the screen
 print(table)
