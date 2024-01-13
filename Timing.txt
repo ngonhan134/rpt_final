@@ -230,7 +230,7 @@ Information: Percent of Arnoldi-based delays = 97.36%
   data required time                                                 1.97
   data arrival time                                                 -1.96
   --------------------------------------------------------------------------
-  slack (VIOLATED: increase significant digits)                     -0.01
+  slack (MET)                                                        0.01
 
 
   Startpoint: U1_u1_Y81_final_2_reg_9_
