@@ -63,7 +63,7 @@ for i in range(num_line):
     path_type_line = lines_path_type[i]
     path_group_line=lines_path_group[i]
 
-    table.add_row([i+1,slack_line, end_point_line, start_point_line, path_type_line,path_group_line])
+    table.add_row([i+1,slack_line,start_point_line, end_point_line, path_type_line,path_group_line])
     #table.add_row([i + 1, slack_line, end_point_line, start_point_line, path_type_line])
 
 
